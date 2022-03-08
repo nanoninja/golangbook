@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr"><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slices</title>
+    <link rel="stylesheet" href="/golangbook/sass/main.css">
+</head><body dir="ltr" data-theme="dark"><header class="header">
+    
+</header><aside class="sidebar">
+    <div class="sidebar__body">
+        <nav class="menu">
+<ol class="menu__nav">
+    <li class="menu__item">
+        <h3>Tables des matières</h3>
+    </li>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="menu__item">
+        <a class="menu__link" href="https://nanoninja.github.io/golangbook/">Accueil</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="menu__item">
+        <a class="menu__link" href="https://nanoninja.github.io/golangbook/introduction/">Introduction</a>
+        <ol class="menu__nav menu--sub">
+            
+            <li class="menu__item">
+                <a class="menu__link" href="https://nanoninja.github.io/golangbook/introduction/historical/">Historique</a>
+            </li>
+            
+            <li class="menu__item">
+                <a class="menu__link" href="https://nanoninja.github.io/golangbook/introduction/phylosophy/">Principes et Philosophie</a>
+            </li>
+            
+            <li class="menu__item">
+                <a class="menu__link" href="https://nanoninja.github.io/golangbook/introduction/domains/">Domaines d&#39;application</a>
+            </li>
+            
+            <li class="menu__item">
+                <a class="menu__link" href="https://nanoninja.github.io/golangbook/introduction/resources/">Ressources</a>
+            </li>
+            
+        </ol>
+    </li>
+    
+
+    
+
+    
+
+    
+    <li class="menu__item">
+        <a class="menu__link" href="https://nanoninja.github.io/golangbook/installation/">Installation</a>
+        <ol class="menu__nav menu--sub">
+            
+            <li class="menu__item">
+                <a class="menu__link" href="https://nanoninja.github.io/golangbook/installation/commands/">Commandes</a>
+            </li>
+            
+            <li class="menu__item">
+                <a class="menu__link" href="https://nanoninja.github.io/golangbook/installation/workspace/">Espace de Travail</a>
+            </li>
+            
+        </ol>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="menu__item">
+        <a class="menu__link" href="https://nanoninja.github.io/golangbook/basics/">Bases du langage</a>
+        <ol class="menu__nav menu--sub">
+            
+            <li class="menu__item">
+                <a class="menu__link" href="https://nanoninja.github.io/golangbook/basics/hello-world/">Hello World</a>
+            </li>
+            
+            <li class="menu__item">
+                <a class="menu__link" href="https://nanoninja.github.io/golangbook/basics/packages/">Packages</a>
+            </li>
+            
+            <li class="menu__item">
+                <a class="menu__link" href="https://nanoninja.github.io/golangbook/basics/types/">Types de base</a>
+            </li>
+            
+            <li class="menu__item">
+                <a class="menu__link" href="https://nanoninja.github.io/golangbook/basics/variables/">Variables</a>
+            </li>
+            
+            <li class="menu__item">
+                <a class="menu__link" href="https://nanoninja.github.io/golangbook/basics/constantes/">Constantes</a>
+            </li>
+            
+            <li class="menu__item">
+                <a class="menu__link" href="https://nanoninja.github.io/golangbook/basics/blank/">Identifiant blanc _</a>
+            </li>
+            
+            <li class="menu__item">
+                <a class="menu__link" href="https://nanoninja.github.io/golangbook/basics/scope/">Portée des variables</a>
+            </li>
+            
+            <li class="menu__item">
+                <a class="menu__link" href="https://nanoninja.github.io/golangbook/basics/fmt/">Package fmt</a>
+            </li>
+            
+            <li class="menu__item">
+                <a class="menu__link" href="https://nanoninja.github.io/golangbook/basics/control-flow/">Contrôle de flux</a>
+            </li>
+            
+        </ol>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="menu__item">
+        <a class="menu__link" href="https://nanoninja.github.io/golangbook/collections/">Collections</a>
+        <ol class="menu__nav menu--sub">
+            
+            <li class="menu__item">
+                <a class="menu__link" href="https://nanoninja.github.io/golangbook/collections/arrays/">Arrays</a>
+            </li>
+            
+            <li class="menu__item">
+                <a class="menu__link" href="https://nanoninja.github.io/golangbook/collections/slices/">Slices</a>
+            </li>
+            
+            <li class="menu__item">
+                <a class="menu__link" href="https://nanoninja.github.io/golangbook/collections/maps/">Maps</a>
+            </li>
+            
+        </ol>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="menu__item">
+        <a class="menu__link" href="https://nanoninja.github.io/golangbook/pointers/">Pointers</a>
+        <ol class="menu__nav menu--sub">
+            
+        </ol>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="menu__item">
+        <a class="menu__link" href="https://nanoninja.github.io/golangbook/functions/">Fonctions</a>
+        <ol class="menu__nav menu--sub">
+            
+            <li class="menu__item">
+                <a class="menu__link" href="https://nanoninja.github.io/golangbook/functions/defer/">Defer</a>
+            </li>
+            
+        </ol>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="menu__item">
+        <a class="menu__link" href="https://nanoninja.github.io/golangbook/errors/">Gestion des erreurs</a>
+        <ol class="menu__nav menu--sub">
+            
+            <li class="menu__item">
+                <a class="menu__link" href="https://nanoninja.github.io/golangbook/errors/recover/">Panic et Recover</a>
+            </li>
+            
+        </ol>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="menu__item">
+        <a class="menu__link" href="https://nanoninja.github.io/golangbook/structs/">Structs</a>
+        <ol class="menu__nav menu--sub">
+            
+        </ol>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="menu__item">
+        <a class="menu__link" href="https://nanoninja.github.io/golangbook/interfaces/">Interfaces</a>
+        <ol class="menu__nav menu--sub">
+            
+        </ol>
+    </li>
+    
+
+    
+
+    
+
+    
+    <li class="menu__item">
+        <a class="menu__link" href="https://nanoninja.github.io/golangbook/goroutines/">Goroutines</a>
+        <ol class="menu__nav menu--sub">
+            
+        </ol>
+    </li>
+    
+
+    
+
+    
+
+    
+    <li class="menu__item">
+        <a class="menu__link" href="https://nanoninja.github.io/golangbook/channels/">Channels</a>
+        <ol class="menu__nav menu--sub">
+            
+        </ol>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+</ol>
+
+        </nav>
+    </div>
+</aside><main>
+<div class="container">
+    <h1>Slices</h1>
+
+    <section class="summary">
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#déclarer-un-slice">Déclarer un slice</a></li>
+    <li><a href="#initialiser-un-slice-avec-la-fonction-make">Initialiser un slice avec la fonction make</a></li>
+    <li><a href="#afficher-la-taille-et-la-capacité-dun-slice">Afficher la taille et la capacité d&rsquo;un slice</a></li>
+    <li><a href="#découper-un-slice">Découper un slice</a></li>
+    <li><a href="#ajouter-des-éléments-avec-la-fonction-append">Ajouter des éléments avec la fonction append</a></li>
+    <li><a href="#fusionnner-deux-slices-avec-lopérateur-">Fusionnner deux slices avec l&rsquo;opérateur &hellip;</a></li>
+    <li><a href="#modifier-une-valeur-dans-un-slice">Modifier une valeur dans un slice</a></li>
+    <li><a href="#supprimer-une-valeur-sans-préserver-lordre">Supprimer une valeur sans préserver l&rsquo;ordre</a></li>
+    <li><a href="#supprimer-une-valeur-en-préservant-lordre">Supprimer une valeur en préservant l&rsquo;ordre</a></li>
+    <li><a href="#insérer-une-valeur-au-début-dun-slice">Insérer une valeur au début d&rsquo;un slice</a></li>
+    <li><a href="#insérer-une-valeur-au-milieu-dun-slice">Insérer une valeur au milieu d&rsquo;un slice</a></li>
+  </ul>
+</nav>
+    </section>
+
+    <section class="content">
+        <p>Un slice est une collection de taille fixe pouvant évoluer soit en effectuant un découpage (<em>slicing</em>) diminuant la taille, soit en utilisant la fonction <strong><em>append()</em></strong> pour ajouter des éléments. Comme le tableau, le slice est composé d&rsquo;éléments de même type et peut posséder plusieurs dimensions.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>var s []type
+</span></span></code></pre></div><h2 id="déclarer-un-slice">Déclarer un slice</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">s</span> []<span style="color:#66d9ef">int</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">s</span> <span style="color:#f92672">:=</span> []<span style="color:#66d9ef">int</span>{}
+</span></span></code></pre></div><h2 id="initialiser-un-slice-avec-la-fonction-make">Initialiser un slice avec la fonction make</h2>
+<p>La fonction <strong><em>make</em></strong> permet d&rsquo;initialiser un slice pour un type d&rsquo;élément donné, en spécifiant une taille et éventuellement sa capacité.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>make([]<span style="color:#a6e22e">T</span>, <span style="color:#a6e22e">length</span>, <span style="color:#a6e22e">capacity</span>)
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> <span style="color:#e6db74">&#34;fmt&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">main</span>() {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">s</span> <span style="color:#f92672">:=</span> make([]<span style="color:#66d9ef">int</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">8</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#a6e22e">s</span>) <span style="color:#75715e">// [0 0 0]
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>}
+</span></span></code></pre></div><h2 id="afficher-la-taille-et-la-capacité-dun-slice">Afficher la taille et la capacité d&rsquo;un slice</h2>
+<p>Comme le tableau, la fonction <strong><em>len</em></strong> compte le nombre d&rsquo;éléments et la fonction <strong><em>cap</em></strong> donne la capacité du slice.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> <span style="color:#e6db74">&#34;fmt&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">main</span>() {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">s</span> <span style="color:#f92672">:=</span> make([]<span style="color:#66d9ef">int</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">4</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(len(<span style="color:#a6e22e">s</span>), cap(<span style="color:#a6e22e">s</span>))
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Sortie :</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>2 4
+</span></span></code></pre></div><h2 id="découper-un-slice">Découper un slice</h2>
+<p>Il est possible d&rsquo;obtenir la tranche d&rsquo;un slice en utilisant l&rsquo;opérateur [ ] et en spécifiant la position de départ et ou la position de fin. La valeur de départ va de 0 à n-1 et la valeur de fin de 1 à n.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>s[start:end]
+</span></span><span style="display:flex;"><span>s[start:]
+</span></span><span style="display:flex;"><span>s[:end]
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>start:    <span style="color:#ae81ff">0</span>       <span style="color:#ae81ff">1</span>        <span style="color:#ae81ff">2</span>       <span style="color:#ae81ff">3</span>       <span style="color:#ae81ff">4</span>       <span style="color:#ae81ff">5</span>       <span style="color:#ae81ff">6</span>       <span style="color:#ae81ff">7</span>      <span style="color:#ae81ff">8</span>
+</span></span><span style="display:flex;"><span>  end:    <span style="color:#ae81ff">1</span>       <span style="color:#ae81ff">2</span>        <span style="color:#ae81ff">3</span>       <span style="color:#ae81ff">4</span>       <span style="color:#ae81ff">5</span>       <span style="color:#ae81ff">6</span>       <span style="color:#ae81ff">7</span>       <span style="color:#ae81ff">8</span>      <span style="color:#ae81ff">9</span>
+</span></span><span style="display:flex;"><span>slice: <span style="color:#f92672">[</span><span style="color:#e6db74">&#34;the&#34;</span>, <span style="color:#e6db74">&#34;quick&#34;</span>, <span style="color:#e6db74">&#34;brown&#34;</span>, <span style="color:#e6db74">&#34;fox&#34;</span>, <span style="color:#e6db74">&#34;jumps&#34;</span>, <span style="color:#e6db74">&#34;over&#34;</span>, <span style="color:#e6db74">&#34;the&#34;</span>, <span style="color:#e6db74">&#34;lazy&#34;</span>, <span style="color:#e6db74">&#34;dog&#34;</span><span style="color:#f92672">]</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> <span style="color:#e6db74">&#34;fmt&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">main</span>() {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">s</span> <span style="color:#f92672">:=</span> []<span style="color:#66d9ef">string</span>{<span style="color:#e6db74">&#34;the&#34;</span>, <span style="color:#e6db74">&#34;quick&#34;</span>, <span style="color:#e6db74">&#34;brown&#34;</span>, <span style="color:#e6db74">&#34;fox&#34;</span>, <span style="color:#e6db74">&#34;jumps&#34;</span>, <span style="color:#e6db74">&#34;over&#34;</span>, <span style="color:#e6db74">&#34;the&#34;</span>, <span style="color:#e6db74">&#34;lazy&#34;</span>, <span style="color:#e6db74">&#34;dog&#34;</span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#a6e22e">s</span>[<span style="color:#ae81ff">6</span>:<span style="color:#ae81ff">9</span>])
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Sortie:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>[the lazy dog]
+</span></span></code></pre></div><h2 id="ajouter-des-éléments-avec-la-fonction-append">Ajouter des éléments avec la fonction append</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>func append(slice []Type, elems ...Type) []Type
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> <span style="color:#e6db74">&#34;fmt&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">main</span>() {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">s</span> <span style="color:#f92672">:=</span> []<span style="color:#66d9ef">string</span>{<span style="color:#e6db74">&#34;a&#34;</span>, <span style="color:#e6db74">&#34;b&#34;</span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">s</span> = append(<span style="color:#a6e22e">s</span>, <span style="color:#e6db74">&#34;c&#34;</span>, <span style="color:#e6db74">&#34;d&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#a6e22e">s</span>)
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Sortie :</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>[a b c d]
+</span></span></code></pre></div><p>Lorsque le nombre d’élément dépasse la capacité initiale d’un slice la fonction <em><strong>append</strong></em> doublera sa taille à partir de la dernière capacité définie. Si vous définissez une capacité de 3 elle passera à 6 puis à 12, 24, etc.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> <span style="color:#e6db74">&#34;fmt&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">main</span>() {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">s</span> <span style="color:#f92672">:=</span> make([]<span style="color:#66d9ef">string</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">s</span>[<span style="color:#ae81ff">0</span>] = <span style="color:#e6db74">&#34;a&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">s</span>[<span style="color:#ae81ff">1</span>] = <span style="color:#e6db74">&#34;b&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">s</span> = append(<span style="color:#a6e22e">s</span>, <span style="color:#e6db74">&#34;c&#34;</span>, <span style="color:#e6db74">&#34;d&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#e6db74">&#34;len:&#34;</span>, len(<span style="color:#a6e22e">s</span>), <span style="color:#e6db74">&#34;cap:&#34;</span>, cap(<span style="color:#a6e22e">s</span>))
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Sortie :</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>len: <span style="color:#ae81ff">4</span> cap: <span style="color:#ae81ff">6</span>
+</span></span></code></pre></div><h2 id="fusionnner-deux-slices-avec-lopérateur-">Fusionnner deux slices avec l&rsquo;opérateur &hellip;</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> <span style="color:#e6db74">&#34;fmt&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">main</span>() {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">s1</span> <span style="color:#f92672">:=</span> []<span style="color:#66d9ef">string</span>{<span style="color:#e6db74">&#34;a&#34;</span>, <span style="color:#e6db74">&#34;b&#34;</span>}
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">s2</span> <span style="color:#f92672">:=</span> []<span style="color:#66d9ef">string</span>{<span style="color:#e6db74">&#34;c&#34;</span>, <span style="color:#e6db74">&#34;d&#34;</span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">s1</span> = append(<span style="color:#a6e22e">s1</span>, <span style="color:#a6e22e">s2</span><span style="color:#f92672">...</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#a6e22e">s1</span>)
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h2 id="modifier-une-valeur-dans-un-slice">Modifier une valeur dans un slice</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> <span style="color:#e6db74">&#34;fmt&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">main</span>() {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">s</span> <span style="color:#f92672">:=</span> []<span style="color:#66d9ef">int</span>{<span style="color:#ae81ff">30</span>, <span style="color:#ae81ff">12</span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">s</span>[<span style="color:#ae81ff">1</span>] = <span style="color:#ae81ff">40</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#a6e22e">s</span>)
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Sortie :</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>[30 40]
+</span></span></code></pre></div><h2 id="supprimer-une-valeur-sans-préserver-lordre">Supprimer une valeur sans préserver l&rsquo;ordre</h2>
+<p>Supprimer une valeur dans un slice sans préserver l&rsquo;ordre n&rsquo;est peut-être pas la méthode la plus utilisée mais si l&rsquo;ordre n&rsquo;a pas d&rsquo;importance pour vous cette méthode sera la plus performante.</p>
+<p>La suppression se fait en deux étapes :</p>
+<ul>
+<li>on remplace la valeur à supprimer par la dernière entrée du slice</li>
+<li>on supprime la dernière entrée du slice en découpant</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> <span style="color:#e6db74">&#34;fmt&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">main</span>() {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">s</span> <span style="color:#f92672">:=</span> []<span style="color:#66d9ef">string</span>{<span style="color:#e6db74">&#34;a&#34;</span>, <span style="color:#e6db74">&#34;b&#34;</span>, <span style="color:#e6db74">&#34;c&#34;</span>, <span style="color:#e6db74">&#34;d&#34;</span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">s</span>[<span style="color:#ae81ff">1</span>] = <span style="color:#a6e22e">s</span>[len(<span style="color:#a6e22e">s</span>)<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>]
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">s</span> = <span style="color:#a6e22e">s</span>[<span style="color:#ae81ff">0</span> : len(<span style="color:#a6e22e">s</span>)<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#a6e22e">s</span>)
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Sortie :</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>[a d c]
+</span></span></code></pre></div><h2 id="supprimer-une-valeur-en-préservant-lordre">Supprimer une valeur en préservant l&rsquo;ordre</h2>
+<p>On tranche deux fois pour récupérer la partie avant et après de la valeur à supprimer. La fonction <strong><em>append</em></strong> prend en premier argument le slice dans lequel on veut ajouter et en deuxième les valeurs à ajouter grâce à la notation &hellip; et renvoie un slice contenant toutes les valeurs dans l&rsquo;ordre.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> <span style="color:#e6db74">&#34;fmt&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">main</span>() {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">s</span> <span style="color:#f92672">:=</span> []<span style="color:#66d9ef">string</span>{<span style="color:#e6db74">&#34;a&#34;</span>, <span style="color:#e6db74">&#34;b&#34;</span>, <span style="color:#e6db74">&#34;c&#34;</span>, <span style="color:#e6db74">&#34;d&#34;</span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">s</span> = append(<span style="color:#a6e22e">s</span>[<span style="color:#ae81ff">0</span>:<span style="color:#ae81ff">2</span>], <span style="color:#a6e22e">s</span>[<span style="color:#ae81ff">3</span>:<span style="color:#ae81ff">4</span>]<span style="color:#f92672">...</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#a6e22e">s</span>)
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Sortie :</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>[a b d]
+</span></span></code></pre></div><h2 id="insérer-une-valeur-au-début-dun-slice">Insérer une valeur au début d&rsquo;un slice</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> <span style="color:#e6db74">&#34;fmt&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">main</span>() {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">s</span> <span style="color:#f92672">:=</span> []<span style="color:#66d9ef">string</span>{<span style="color:#e6db74">&#34;b&#34;</span>, <span style="color:#e6db74">&#34;c&#34;</span>, <span style="color:#e6db74">&#34;d&#34;</span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">s</span> = append([]<span style="color:#66d9ef">string</span>{<span style="color:#e6db74">&#34;a&#34;</span>}, <span style="color:#a6e22e">s</span><span style="color:#f92672">...</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#a6e22e">s</span>)
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Sortie :</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>[a b c d]
+</span></span></code></pre></div><h2 id="insérer-une-valeur-au-milieu-dun-slice">Insérer une valeur au milieu d&rsquo;un slice</h2>
+<p>L&rsquo;idéal parfois est de découper son l&rsquo;agorithme en plusieurs petits problèmes plus facile à résoudre. Bien que ça ne soit pas un gros problème à la base ça demande un peu d&rsquo;habitude.</p>
+<p>Dans l&rsquo;exemple suivant on insére la lettre <em>b</em> entre <em>a</em> et <em>c</em> :</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> <span style="color:#e6db74">&#34;fmt&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">main</span>() {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">s</span> <span style="color:#f92672">:=</span> []<span style="color:#66d9ef">string</span>{<span style="color:#e6db74">&#34;a&#34;</span>, <span style="color:#e6db74">&#34;c&#34;</span>, <span style="color:#e6db74">&#34;d&#34;</span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">s</span> = append(<span style="color:#a6e22e">s</span>[<span style="color:#ae81ff">0</span>:<span style="color:#ae81ff">1</span>], append([]<span style="color:#66d9ef">string</span>{<span style="color:#e6db74">&#34;b&#34;</span>}, <span style="color:#a6e22e">s</span>[<span style="color:#ae81ff">1</span>:]<span style="color:#f92672">...</span>)<span style="color:#f92672">...</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#a6e22e">s</span>)
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Sortie :</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>[a b c d]
+</span></span></code></pre></div>
+    </section>
+</div>
+
+        </main><footer class="footer">
+    <div class="navbar navbar--border-t">
+        <div class="copyright">©2022 Vincent</div>
+    </div>
+</footer>
+
+<script type="text/javascript">
+const btn = document.querySelector('.sidebar__body h3');
+
+btn.addEventListener('click', e => {
+    if (localStorage.getItem('darkmode') === 'dark') {
+        localStorage.setItem('darkmode', 'light');
+        document.documentElement.setAttribute('data-theme', 'light');
+    } else {
+        localStorage.setItem('darkmode', 'dark');
+        document.documentElement.setAttribute('data-theme', 'dark');
+    }
+});
+</script>
+
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [
+                ['$', '$'],
+                ['\\(', '\\)']
+            ],
+            displayMath: [
+                ['$$', '$$']
+            ],
+            processEscapes: true,
+            processEnvironments: true,
+            skipTags: ['script', 'noscript', 'style', 'textarea'],
+            TeX: {
+                equationNumbers: {
+                    autoNumber: "AMS"
+                },
+                extensions: ["AMSmath.js", "AMSsymbols.js"]
+            }
+        }
+    });
+
+    MathJax.Hub.Queue(function () {
+        var all = MathJax.Hub.getAllJax();
+        var i;
+
+        for (i = 0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' language-jax';
+        }
+    });
+</script></body>
+</html>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Bases du langage on Formation Go</title>
+    <link>https://nanoninja.github.io/golangbook/basics/</link>
+    <description>Recent content in Bases du langage on Formation Go</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 20 Feb 2022 20:28:21 +0100</lastBuildDate><atom:link href="https://nanoninja.github.io/golangbook/basics/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hello World</title>
+      <link>https://nanoninja.github.io/golangbook/basics/hello-world/</link>
+      <pubDate>Fri, 25 Feb 2022 10:34:17 +0100</pubDate>
+      
+      <guid>https://nanoninja.github.io/golangbook/basics/hello-world/</guid>
+      <description>Créer un fichier main.go dans le répertoire de votre choix et ajouter le code suivant :
+package main  import &amp;#34;fmt&amp;#34;  func main() {  fmt.Println(&amp;#34;Hello Gophers !&amp;#34;) } On exécute le programme
+go run main.go Description du programme Chaque programme doit commencer par la déclaration de package.
+Les packages sont utilisés pour organiser et réutiliser le code. Dans Go, un programme est destiné à devenir un exécutable ou une bibliothèque partagée et réutilisable dans d&amp;rsquo;autres programmes.</description>
+    </item>
+    
+    <item>
+      <title>Packages</title>
+      <link>https://nanoninja.github.io/golangbook/basics/packages/</link>
+      <pubDate>Fri, 25 Feb 2022 12:52:24 +0100</pubDate>
+      
+      <guid>https://nanoninja.github.io/golangbook/basics/packages/</guid>
+      <description>Les packages sont utilisés comme des programmes exécutables ou des bibliothèques réutilisables. On reconnait un programme exécutable car il est défini par un package et une fonction nommés main.
+package main  func main() {  } Les autres packages sont de type bibliothèque pouvant être réutilisés dans plusieurs programmes et permettent d&amp;rsquo;organiser et de structurer le code de façon modulaire. Pour faciliter les imports de nos packages il est recommandé de placer nos fichiers dans notre espace de travail pour les rendre accessibles partout.</description>
+    </item>
+    
+    <item>
+      <title>Types de base</title>
+      <link>https://nanoninja.github.io/golangbook/basics/types/</link>
+      <pubDate>Sun, 20 Feb 2022 20:28:21 +0100</pubDate>
+      
+      <guid>https://nanoninja.github.io/golangbook/basics/types/</guid>
+      <description>Go est un langage de programmation à typage statique. Cela signifie que les variables ont toujours un type spécifique défini par le programmeur et que ce type ne peut pas changer. Le compilateur peut ainsi détecter les erreurs de type avant l&amp;rsquo;exécution pour obtenir la sûreté du typage. Le langage propose aussi un puissant mécanisme d&amp;rsquo;inférence de type. Go est livré avec plusieurs types de données par défaut que nous allons examiner plus en détail.</description>
+    </item>
+    
+    <item>
+      <title>Variables</title>
+      <link>https://nanoninja.github.io/golangbook/basics/variables/</link>
+      <pubDate>Sun, 20 Feb 2022 20:28:21 +0100</pubDate>
+      
+      <guid>https://nanoninja.github.io/golangbook/basics/variables/</guid>
+      <description>La déclaration des variables dans Go se fait par l&amp;rsquo;utilisation du mot-clé var ou l&amp;rsquo;opérateur de déclaration de variable court :=.
+Le mot-clé var peut être utilisé pour déclarer des variables dans un package ou dans une fonction. Il est associé à un nom, un type et une valeur optionnel. Si une variable n&amp;rsquo;a pas encore reçu de valeur, sa valeur est la valeur zéro de son type.
+var NOM TYPE = [EXPRESSION] L&amp;rsquo;opérateur de déclaration de variable court := est utilisé pour déclarer et initialiser des variables localement dans des fonctions réduisant ainsi la portée des variables.</description>
+    </item>
+    
+    <item>
+      <title>Constantes</title>
+      <link>https://nanoninja.github.io/golangbook/basics/constantes/</link>
+      <pubDate>Sun, 20 Feb 2022 20:28:21 +0100</pubDate>
+      
+      <guid>https://nanoninja.github.io/golangbook/basics/constantes/</guid>
+      <description>Une constante est l&amp;rsquo;opposée d&amp;rsquo;une variable, c&amp;rsquo;est une valeur qui ne doit pas être modifiée par le programme lors de son exécution.
+Le type d&amp;rsquo;une constante dans Go est représenté par :
+ une rune un entier un nombre à virgule flottante un imaginaire un littéral de chaîne.  const a = 4 const b = 2 &amp;lt;&amp;lt; 7 const c = 10 + 6 Déclarer des constantes en liste const (  a = 1  b = 2  c = 4  d = 8 ) Déclarer des constantes avec un iota Le mot-clé iota permet de créer une séquence en partant d&amp;rsquo;une valeur incrémentale qui est réinitialisé à zéro pour chaque nouvelle séquence.</description>
+    </item>
+    
+    <item>
+      <title>Identifiant blanc _</title>
+      <link>https://nanoninja.github.io/golangbook/basics/blank/</link>
+      <pubDate>Tue, 22 Feb 2022 09:19:25 +0100</pubDate>
+      
+      <guid>https://nanoninja.github.io/golangbook/basics/blank/</guid>
+      <description>Dans Go, Il est possible qu&amp;rsquo;une fonction retourne plusieurs valeurs et qu&amp;rsquo;une de ces valeurs ne soit pas utile pour notre programme. Par exemple la fonction Println du package fmt retourne deux valeurs. La première est le nombre d&amp;rsquo;octets écrits sur la sortie standard et la deuxième toute erreur d&amp;rsquo;écriture rencontrée.
+Nous voulons afficher le nombre d&amp;rsquo;octets écris mais nous ne souhaitons pas utiliser la variable d&amp;rsquo;erreur seulement Go stop la compilation pour les variables définies dans une fonction qui sont inutilisées.</description>
+    </item>
+    
+    <item>
+      <title>Portée des variables</title>
+      <link>https://nanoninja.github.io/golangbook/basics/scope/</link>
+      <pubDate>Tue, 22 Feb 2022 09:18:48 +0100</pubDate>
+      
+      <guid>https://nanoninja.github.io/golangbook/basics/scope/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Package fmt</title>
+      <link>https://nanoninja.github.io/golangbook/basics/fmt/</link>
+      <pubDate>Mon, 28 Feb 2022 16:40:19 +0100</pubDate>
+      
+      <guid>https://nanoninja.github.io/golangbook/basics/fmt/</guid>
+      <description>Le package fmt implémente des entrées/sorties formatées avec des fonctions analogues aux printf et scanf du language C.
+go doc fmt.Print  package fmt // import &amp;#34;fmt&amp;#34;  func Print(a ...interface{}) (n int, err error)  Print formats using the default formats for its operands and writes to  standard output. Spaces are added between operands when neither is a string.  It returns the number of bytes written and any write error encountered.</description>
+    </item>
+    
+    <item>
+      <title>Contrôle de flux</title>
+      <link>https://nanoninja.github.io/golangbook/basics/control-flow/</link>
+      <pubDate>Tue, 01 Mar 2022 13:47:44 +0100</pubDate>
+      
+      <guid>https://nanoninja.github.io/golangbook/basics/control-flow/</guid>
+      <description>Le contrôle de flux se matérialise par l&amp;rsquo;insertion dans le code d&amp;rsquo;une structure conditionnelle, (aussi appelé expression conditionnelle). C&amp;rsquo;est un fonction du langage, qui effectue différents calculs ou actions, en fonction de l&amp;rsquo;évaluation d&amp;rsquo;une condition booléenne, à savoir vraie ou fausse.
+Les structures conditionnelles dans Go sont similaires à de nombreux langages. Elles sont composées d&amp;rsquo;un mot-clé réservé, d&amp;rsquo;un initialisateur optionnel, d&amp;rsquo;une expression sans parenthèses et d&amp;rsquo;un bloc d&amp;rsquo;instructions entre accolades.</description>
+    </item>
+    
+  </channel>
+</rss>

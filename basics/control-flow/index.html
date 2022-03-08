@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr"><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contrôle de flux</title>
+    <link rel="stylesheet" href="/golangbook/sass/main.css">
+</head><body dir="ltr" data-theme="dark"><header class="header">
+    
+</header><aside class="sidebar">
+    <div class="sidebar__body">
+        <nav class="menu">
+<ol class="menu__nav">
+    <li class="menu__item">
+        <h3>Tables des matières</h3>
+    </li>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="menu__item">
+        <a class="menu__link" href="https://nanoninja.github.io/golangbook/">Accueil</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="menu__item">
+        <a class="menu__link" href="https://nanoninja.github.io/golangbook/introduction/">Introduction</a>
+        <ol class="menu__nav menu--sub">
+            
+            <li class="menu__item">
+                <a class="menu__link" href="https://nanoninja.github.io/golangbook/introduction/historical/">Historique</a>
+            </li>
+            
+            <li class="menu__item">
+                <a class="menu__link" href="https://nanoninja.github.io/golangbook/introduction/phylosophy/">Principes et Philosophie</a>
+            </li>
+            
+            <li class="menu__item">
+                <a class="menu__link" href="https://nanoninja.github.io/golangbook/introduction/domains/">Domaines d&#39;application</a>
+            </li>
+            
+            <li class="menu__item">
+                <a class="menu__link" href="https://nanoninja.github.io/golangbook/introduction/resources/">Ressources</a>
+            </li>
+            
+        </ol>
+    </li>
+    
+
+    
+
+    
+
+    
+    <li class="menu__item">
+        <a class="menu__link" href="https://nanoninja.github.io/golangbook/installation/">Installation</a>
+        <ol class="menu__nav menu--sub">
+            
+            <li class="menu__item">
+                <a class="menu__link" href="https://nanoninja.github.io/golangbook/installation/commands/">Commandes</a>
+            </li>
+            
+            <li class="menu__item">
+                <a class="menu__link" href="https://nanoninja.github.io/golangbook/installation/workspace/">Espace de Travail</a>
+            </li>
+            
+        </ol>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="menu__item">
+        <a class="menu__link" href="https://nanoninja.github.io/golangbook/basics/">Bases du langage</a>
+        <ol class="menu__nav menu--sub">
+            
+            <li class="menu__item">
+                <a class="menu__link" href="https://nanoninja.github.io/golangbook/basics/hello-world/">Hello World</a>
+            </li>
+            
+            <li class="menu__item">
+                <a class="menu__link" href="https://nanoninja.github.io/golangbook/basics/packages/">Packages</a>
+            </li>
+            
+            <li class="menu__item">
+                <a class="menu__link" href="https://nanoninja.github.io/golangbook/basics/types/">Types de base</a>
+            </li>
+            
+            <li class="menu__item">
+                <a class="menu__link" href="https://nanoninja.github.io/golangbook/basics/variables/">Variables</a>
+            </li>
+            
+            <li class="menu__item">
+                <a class="menu__link" href="https://nanoninja.github.io/golangbook/basics/constantes/">Constantes</a>
+            </li>
+            
+            <li class="menu__item">
+                <a class="menu__link" href="https://nanoninja.github.io/golangbook/basics/blank/">Identifiant blanc _</a>
+            </li>
+            
+            <li class="menu__item">
+                <a class="menu__link" href="https://nanoninja.github.io/golangbook/basics/scope/">Portée des variables</a>
+            </li>
+            
+            <li class="menu__item">
+                <a class="menu__link" href="https://nanoninja.github.io/golangbook/basics/fmt/">Package fmt</a>
+            </li>
+            
+            <li class="menu__item">
+                <a class="menu__link" href="https://nanoninja.github.io/golangbook/basics/control-flow/">Contrôle de flux</a>
+            </li>
+            
+        </ol>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="menu__item">
+        <a class="menu__link" href="https://nanoninja.github.io/golangbook/collections/">Collections</a>
+        <ol class="menu__nav menu--sub">
+            
+            <li class="menu__item">
+                <a class="menu__link" href="https://nanoninja.github.io/golangbook/collections/arrays/">Arrays</a>
+            </li>
+            
+            <li class="menu__item">
+                <a class="menu__link" href="https://nanoninja.github.io/golangbook/collections/slices/">Slices</a>
+            </li>
+            
+            <li class="menu__item">
+                <a class="menu__link" href="https://nanoninja.github.io/golangbook/collections/maps/">Maps</a>
+            </li>
+            
+        </ol>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="menu__item">
+        <a class="menu__link" href="https://nanoninja.github.io/golangbook/pointers/">Pointers</a>
+        <ol class="menu__nav menu--sub">
+            
+        </ol>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="menu__item">
+        <a class="menu__link" href="https://nanoninja.github.io/golangbook/functions/">Fonctions</a>
+        <ol class="menu__nav menu--sub">
+            
+            <li class="menu__item">
+                <a class="menu__link" href="https://nanoninja.github.io/golangbook/functions/defer/">Defer</a>
+            </li>
+            
+        </ol>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="menu__item">
+        <a class="menu__link" href="https://nanoninja.github.io/golangbook/errors/">Gestion des erreurs</a>
+        <ol class="menu__nav menu--sub">
+            
+            <li class="menu__item">
+                <a class="menu__link" href="https://nanoninja.github.io/golangbook/errors/recover/">Panic et Recover</a>
+            </li>
+            
+        </ol>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="menu__item">
+        <a class="menu__link" href="https://nanoninja.github.io/golangbook/structs/">Structs</a>
+        <ol class="menu__nav menu--sub">
+            
+        </ol>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="menu__item">
+        <a class="menu__link" href="https://nanoninja.github.io/golangbook/interfaces/">Interfaces</a>
+        <ol class="menu__nav menu--sub">
+            
+        </ol>
+    </li>
+    
+
+    
+
+    
+
+    
+    <li class="menu__item">
+        <a class="menu__link" href="https://nanoninja.github.io/golangbook/goroutines/">Goroutines</a>
+        <ol class="menu__nav menu--sub">
+            
+        </ol>
+    </li>
+    
+
+    
+
+    
+
+    
+    <li class="menu__item">
+        <a class="menu__link" href="https://nanoninja.github.io/golangbook/channels/">Channels</a>
+        <ol class="menu__nav menu--sub">
+            
+        </ol>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+</ol>
+
+        </nav>
+    </div>
+</aside><main>
+<div class="container">
+    <h1>Contrôle de flux</h1>
+
+    <section class="summary">
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#opérateurs-logiques">Opérateurs logiques</a></li>
+    <li><a href="#opérateurs-de-comparaisons">Opérateurs de comparaisons</a></li>
+    <li><a href="#structure-if--else">Structure if / else</a></li>
+    <li><a href="#switch-case-simple">Switch case simple</a></li>
+    <li><a href="#switch-case-avec-un-initialisateur">Switch case avec un initialisateur</a></li>
+    <li><a href="#switch-case-conditionnel">Switch case conditionnel</a></li>
+    <li><a href="#switch-case-multiple">Switch case multiple</a></li>
+    <li><a href="#switch-case-de-type">Switch case de type</a></li>
+    <li><a href="#switch-case-avec-fallthrough">Switch case avec fallthrough</a></li>
+    <li><a href="#boucle-for">Boucle for</a></li>
+    <li><a href="#boucle-for-ever">Boucle for ever</a></li>
+  </ul>
+</nav>
+    </section>
+
+    <section class="content">
+        <p>Le contrôle de flux se matérialise par l&rsquo;insertion dans le code d&rsquo;une structure conditionnelle, (aussi appelé expression conditionnelle). C&rsquo;est un fonction du langage, qui effectue différents calculs ou actions, en fonction de l&rsquo;évaluation d&rsquo;une condition booléenne, à savoir vraie ou fausse.</p>
+<p>Les structures conditionnelles dans Go sont similaires à de nombreux langages. Elles sont composées d&rsquo;un mot-clé réservé, d&rsquo;un initialisateur optionnel, d&rsquo;une expression sans parenthèses et d&rsquo;un bloc d&rsquo;instructions entre accolades.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#66d9ef">if</span> <span style="color:#a6e22e">condition</span> <span style="color:#a6e22e">ou</span> <span style="color:#a6e22e">expression</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// block d&#39;instruction 
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> <span style="color:#a6e22e">condition</span> <span style="color:#a6e22e">ou</span> <span style="color:#a6e22e">expression</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// block d&#39;instruction
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>}
+</span></span></code></pre></div><h2 id="opérateurs-logiques">Opérateurs logiques</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Description</th>
+<th style="text-align:left">Symbole</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Les deux conditions sont vraies</td>
+<td style="text-align:left">&amp;&amp;</td>
+</tr>
+<tr>
+<td style="text-align:left">Au moins une des condition est vraie</td>
+<td style="text-align:left">||</td>
+</tr>
+<tr>
+<td style="text-align:left">La condition doit être fause</td>
+<td style="text-align:left">!</td>
+</tr>
+</tbody>
+</table>
+<h2 id="opérateurs-de-comparaisons">Opérateurs de comparaisons</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Description</th>
+<th style="text-align:left">Symbole</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Egale</td>
+<td style="text-align:left">==</td>
+</tr>
+<tr>
+<td style="text-align:left">Différent</td>
+<td style="text-align:left">!=</td>
+</tr>
+<tr>
+<td style="text-align:left">Strictement inférieur</td>
+<td style="text-align:left">&lt;</td>
+</tr>
+<tr>
+<td style="text-align:left">Strictement inférieur</td>
+<td style="text-align:left">&gt;</td>
+</tr>
+<tr>
+<td style="text-align:left">Strictement supérieur</td>
+<td style="text-align:left">&lt;=</td>
+</tr>
+<tr>
+<td style="text-align:left">Strictement inférieur</td>
+<td style="text-align:left">&gt;=</td>
+</tr>
+</tbody>
+</table>
+<h2 id="structure-if--else">Structure if / else</h2>
+<p>L&rsquo;instruction if évalue la condition :</p>
+<ul>
+<li>si la <strong>condition</strong> est évaluée à true, le block d&rsquo;instruction sera exécuté</li>
+<li>si la <strong>condition</strong> est évaluée à false, le block d&rsquo;instruction ne sera pas exécuté.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> (
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;fmt&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;os&#34;</span>
+</span></span><span style="display:flex;"><span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">main</span>() {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> len(<span style="color:#a6e22e">os</span>.<span style="color:#a6e22e">Args</span>) <span style="color:#f92672">==</span> <span style="color:#ae81ff">2</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#a6e22e">os</span>.<span style="color:#a6e22e">Args</span>[<span style="color:#ae81ff">1</span>])
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Sortie :</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>go run main.go hello
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>hello
+</span></span></code></pre></div><p>Utilisation des branches alternatives de type <strong><em>else</em></strong> et <strong><em>else if</em></strong> :</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> (
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;fmt&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;log&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;os&#34;</span>
+</span></span><span style="display:flex;"><span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">main</span>() {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> len(<span style="color:#a6e22e">os</span>.<span style="color:#a6e22e">Args</span>) &lt; <span style="color:#ae81ff">2</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">log</span>.<span style="color:#a6e22e">Fatalln</span>(<span style="color:#e6db74">&#34;two missing arguments&#34;</span>)
+</span></span><span style="display:flex;"><span>    } <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span> len(<span style="color:#a6e22e">os</span>.<span style="color:#a6e22e">Args</span>) <span style="color:#f92672">==</span> <span style="color:#ae81ff">2</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">log</span>.<span style="color:#a6e22e">Fatalln</span>(<span style="color:#e6db74">&#34;the second argument is missing&#34;</span>)
+</span></span><span style="display:flex;"><span>    } <span style="color:#66d9ef">else</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#a6e22e">os</span>.<span style="color:#a6e22e">Args</span>[<span style="color:#ae81ff">1</span>], <span style="color:#a6e22e">os</span>.<span style="color:#a6e22e">Args</span>[<span style="color:#ae81ff">2</span>])
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Sortie :</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>go run main.go hello gopher
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>hello gopher
+</span></span></code></pre></div><h2 id="switch-case-simple">Switch case simple</h2>
+<p>Le switch case dans Go est un peu différent du C, le mot-clé <strong><em>break</em></strong> est implicite et les expressions pour chaque cas peuvent-être multiple.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#66d9ef">switch</span> [<span style="color:#a6e22e">déclaration</span>;] <span style="color:#a6e22e">expression</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">case</span> <span style="color:#a6e22e">expression1</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// instructions
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">case</span> <span style="color:#a6e22e">expression2</span>, <span style="color:#a6e22e">expression3</span>, <span style="color:#a6e22e">expression4</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// instructions
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">default</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// instructions
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>}
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> <span style="color:#e6db74">&#34;fmt&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">main</span>() {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">num</span> <span style="color:#f92672">:=</span> <span style="color:#ae81ff">4</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">switch</span> <span style="color:#a6e22e">num</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">case</span> <span style="color:#ae81ff">2</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#a6e22e">num</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">case</span> <span style="color:#ae81ff">4</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#a6e22e">num</span>)
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Sortie :</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#ae81ff">4</span>
+</span></span></code></pre></div><h2 id="switch-case-avec-un-initialisateur">Switch case avec un initialisateur</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> <span style="color:#e6db74">&#34;fmt&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">main</span>() {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">switch</span> <span style="color:#a6e22e">value</span> <span style="color:#f92672">:=</span> <span style="color:#ae81ff">4</span>; <span style="color:#a6e22e">value</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">case</span> <span style="color:#ae81ff">2</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#a6e22e">value</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">case</span> <span style="color:#ae81ff">4</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#a6e22e">value</span>)
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h2 id="switch-case-conditionnel">Switch case conditionnel</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> <span style="color:#e6db74">&#34;fmt&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">main</span>() {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">value</span> <span style="color:#f92672">:=</span> <span style="color:#e6db74">&#34;Go&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">switch</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">case</span> len(<span style="color:#a6e22e">value</span>) <span style="color:#f92672">==</span> <span style="color:#ae81ff">1</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#a6e22e">value</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">case</span> len(<span style="color:#a6e22e">value</span>) <span style="color:#f92672">==</span> <span style="color:#ae81ff">2</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#a6e22e">value</span>)
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h2 id="switch-case-multiple">Switch case multiple</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> <span style="color:#e6db74">&#34;fmt&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">main</span>() {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">switch</span> <span style="color:#a6e22e">value</span> <span style="color:#f92672">:=</span> <span style="color:#ae81ff">9</span>; <span style="color:#a6e22e">value</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">case</span> <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">6</span>, <span style="color:#ae81ff">8</span>, <span style="color:#ae81ff">10</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#a6e22e">value</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">case</span> <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">7</span>, <span style="color:#ae81ff">9</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#a6e22e">value</span>)
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Sortie :</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#ae81ff">9</span>
+</span></span></code></pre></div><h2 id="switch-case-de-type">Switch case de type</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> <span style="color:#e6db74">&#34;fmt&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">main</span>() {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">value</span> <span style="color:#66d9ef">interface</span>{}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">value</span> = <span style="color:#e6db74">&#34;Hello Gopher&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">switch</span> <span style="color:#a6e22e">t</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">value</span>.(<span style="color:#66d9ef">type</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">case</span> <span style="color:#66d9ef">int</span>, <span style="color:#66d9ef">int32</span>, <span style="color:#66d9ef">int64</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#a6e22e">t</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">case</span> <span style="color:#66d9ef">string</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#a6e22e">t</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">default</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#e6db74">&#34;type is unknown&#34;</span>)
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h2 id="switch-case-avec-fallthrough">Switch case avec fallthrough</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> <span style="color:#e6db74">&#34;fmt&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">main</span>() {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">value</span> <span style="color:#f92672">:=</span> <span style="color:#ae81ff">75</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">switch</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">case</span> <span style="color:#a6e22e">value</span> &lt; <span style="color:#ae81ff">50</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#e6db74">&#34;value is less than 50&#34;</span>)
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">fallthrough</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">case</span> <span style="color:#a6e22e">value</span> &lt; <span style="color:#ae81ff">100</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#e6db74">&#34;value is less than 100&#34;</span>)
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">fallthrough</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">case</span> <span style="color:#a6e22e">value</span> &lt; <span style="color:#ae81ff">150</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#e6db74">&#34;value is less than 150&#34;</span>)
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Sortie :</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>value is less than <span style="color:#ae81ff">100</span>
+</span></span><span style="display:flex;"><span>value is less than <span style="color:#ae81ff">150</span>
+</span></span></code></pre></div><h2 id="boucle-for">Boucle for</h2>
+<p>Le langage Go n&rsquo;utilise que le mot-clé <strong><em>for</em></strong> pour les boucles avec différentes initialisions.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#66d9ef">for</span> <span style="color:#a6e22e">déclaration</span>; <span style="color:#a6e22e">condition</span>; <span style="color:#a6e22e">post</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// block d&#39;instruction à répeter
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>}
+</span></span></code></pre></div><ul>
+<li>la déclaration est exécuté en premier avant la première itération</li>
+<li>La partie condition est exécutée avant chaque itération. <br>
+Si la condition est fausse, la boucle se terminera sinon la boucle continuera à itérer.</li>
+<li>La partie post est exécutée après chaque itération. Après cela, la condition est vérifiée, <br>
+si elle est vraie, la boucle se poursuit sinon la boucle existe.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> <span style="color:#e6db74">&#34;fmt&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">main</span>() {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> <span style="color:#a6e22e">i</span> <span style="color:#f92672">:=</span> <span style="color:#ae81ff">0</span>; <span style="color:#a6e22e">i</span> &lt; <span style="color:#ae81ff">5</span>; <span style="color:#a6e22e">i</span><span style="color:#f92672">++</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Print</span>(<span style="color:#a6e22e">i</span>)
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Sortie :</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#ae81ff">01234</span>
+</span></span></code></pre></div><p>En omettant la condition vous obtiendrez une boucle infinie :</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> <span style="color:#e6db74">&#34;fmt&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">main</span>() {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> <span style="color:#a6e22e">i</span> <span style="color:#f92672">:=</span> <span style="color:#ae81ff">0</span>; ; <span style="color:#a6e22e">i</span><span style="color:#f92672">++</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Print</span>(<span style="color:#a6e22e">i</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> <span style="color:#a6e22e">i</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">3</span> {
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">break</span>
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Sortie :</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#ae81ff">0123</span>
+</span></span></code></pre></div><h2 id="boucle-for-ever">Boucle for ever</h2>
+<p>La boucle for ever est une boucle infinie. La condition de sortie se fait dans le block d&rsquo;instruction.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> <span style="color:#e6db74">&#34;fmt&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">main</span>() {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">username</span> <span style="color:#f92672">:=</span> <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Print</span>(<span style="color:#e6db74">&#34;Entrez votre nom: &#34;</span>)
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Scanf</span>(<span style="color:#e6db74">&#34;%s&#34;</span>, <span style="color:#f92672">&amp;</span><span style="color:#a6e22e">username</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> <span style="color:#a6e22e">username</span> <span style="color:#f92672">!=</span> <span style="color:#e6db74">&#34;&#34;</span> {
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">break</span>
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#e6db74">&#34;Bonjour&#34;</span>, <span style="color:#a6e22e">username</span>)
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Sortie :</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>go run main.go
+</span></span><span style="display:flex;"><span>Entrez votre nom: 
+</span></span><span style="display:flex;"><span>Entrez votre nom: Gopher
+</span></span><span style="display:flex;"><span>Bonjour Gopher
+</span></span></code></pre></div>
+    </section>
+</div>
+
+        </main><footer class="footer">
+    <div class="navbar navbar--border-t">
+        <div class="copyright">©2022 Vincent</div>
+    </div>
+</footer>
+
+<script type="text/javascript">
+const btn = document.querySelector('.sidebar__body h3');
+
+btn.addEventListener('click', e => {
+    if (localStorage.getItem('darkmode') === 'dark') {
+        localStorage.setItem('darkmode', 'light');
+        document.documentElement.setAttribute('data-theme', 'light');
+    } else {
+        localStorage.setItem('darkmode', 'dark');
+        document.documentElement.setAttribute('data-theme', 'dark');
+    }
+});
+</script>
+
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [
+                ['$', '$'],
+                ['\\(', '\\)']
+            ],
+            displayMath: [
+                ['$$', '$$']
+            ],
+            processEscapes: true,
+            processEnvironments: true,
+            skipTags: ['script', 'noscript', 'style', 'textarea'],
+            TeX: {
+                equationNumbers: {
+                    autoNumber: "AMS"
+                },
+                extensions: ["AMSmath.js", "AMSsymbols.js"]
+            }
+        }
+    });
+
+    MathJax.Hub.Queue(function () {
+        var all = MathJax.Hub.getAllJax();
+        var i;
+
+        for (i = 0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' language-jax';
+        }
+    });
+</script></body>
+</html>

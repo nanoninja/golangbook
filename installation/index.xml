@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Installation on Formation Go</title>
+    <link>https://nanoninja.github.io/golangbook/installation/</link>
+    <description>Recent content in Installation on Formation Go</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 22 Feb 2022 16:47:54 +0100</lastBuildDate><atom:link href="https://nanoninja.github.io/golangbook/installation/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Commandes</title>
+      <link>https://nanoninja.github.io/golangbook/installation/commands/</link>
+      <pubDate>Thu, 24 Feb 2022 16:10:46 +0100</pubDate>
+      
+      <guid>https://nanoninja.github.io/golangbook/installation/commands/</guid>
+      <description>Obtenir la version de Go go version Version de Go utilisé par un binaire :
+go version -m [file ...] Afficher l&amp;rsquo;aide go help go help build Accéder à la documentation en ligne de commande La documentation est alimentée par les commentaires rédigés par les développeurs dans le code source et est accessible en locale dans le terminal en ligne de commande :
+go doc Exemples :
+   Commande Description     go doc Affiche la documentation du package actuel   go doc Foo Affiche la documentation de Foo dans le package actuel   go doc encoding/json Affiche la documentation du package encoding/json   go doc json Raccourci pour encoding/json   go doc json.</description>
+    </item>
+    
+    <item>
+      <title>Espace de Travail</title>
+      <link>https://nanoninja.github.io/golangbook/installation/workspace/</link>
+      <pubDate>Tue, 22 Feb 2022 16:41:06 +0100</pubDate>
+      
+      <guid>https://nanoninja.github.io/golangbook/installation/workspace/</guid>
+      <description>Un espace de travail (Workspace) est une hiérarchie de répertoires dédiée à la création d’applications et de paquetages.
+Il est créé par défaut dans votre dossier personnel et se nomme go.
+Cet espace doit avoir 3 dossiers de niveau supérieur appelés :
+go ├── bin ├── pkg └── src   bin contient les binaires exécutables provenant de dépendances tierces ou de la compilation de vos programmes via la commande go install</description>
+    </item>
+    
+  </channel>
+</rss>

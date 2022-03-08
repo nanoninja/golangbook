@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr"><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Package fmt</title>
+    <link rel="stylesheet" href="/golangbook/sass/main.css">
+</head><body dir="ltr" data-theme="dark"><header class="header">
+    
+</header><aside class="sidebar">
+    <div class="sidebar__body">
+        <nav class="menu">
+<ol class="menu__nav">
+    <li class="menu__item">
+        <h3>Tables des matières</h3>
+    </li>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="menu__item">
+        <a class="menu__link" href="https://nanoninja.github.io/golangbook/">Accueil</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="menu__item">
+        <a class="menu__link" href="https://nanoninja.github.io/golangbook/introduction/">Introduction</a>
+        <ol class="menu__nav menu--sub">
+            
+            <li class="menu__item">
+                <a class="menu__link" href="https://nanoninja.github.io/golangbook/introduction/historical/">Historique</a>
+            </li>
+            
+            <li class="menu__item">
+                <a class="menu__link" href="https://nanoninja.github.io/golangbook/introduction/phylosophy/">Principes et Philosophie</a>
+            </li>
+            
+            <li class="menu__item">
+                <a class="menu__link" href="https://nanoninja.github.io/golangbook/introduction/domains/">Domaines d&#39;application</a>
+            </li>
+            
+            <li class="menu__item">
+                <a class="menu__link" href="https://nanoninja.github.io/golangbook/introduction/resources/">Ressources</a>
+            </li>
+            
+        </ol>
+    </li>
+    
+
+    
+
+    
+
+    
+    <li class="menu__item">
+        <a class="menu__link" href="https://nanoninja.github.io/golangbook/installation/">Installation</a>
+        <ol class="menu__nav menu--sub">
+            
+            <li class="menu__item">
+                <a class="menu__link" href="https://nanoninja.github.io/golangbook/installation/commands/">Commandes</a>
+            </li>
+            
+            <li class="menu__item">
+                <a class="menu__link" href="https://nanoninja.github.io/golangbook/installation/workspace/">Espace de Travail</a>
+            </li>
+            
+        </ol>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="menu__item">
+        <a class="menu__link" href="https://nanoninja.github.io/golangbook/basics/">Bases du langage</a>
+        <ol class="menu__nav menu--sub">
+            
+            <li class="menu__item">
+                <a class="menu__link" href="https://nanoninja.github.io/golangbook/basics/hello-world/">Hello World</a>
+            </li>
+            
+            <li class="menu__item">
+                <a class="menu__link" href="https://nanoninja.github.io/golangbook/basics/packages/">Packages</a>
+            </li>
+            
+            <li class="menu__item">
+                <a class="menu__link" href="https://nanoninja.github.io/golangbook/basics/types/">Types de base</a>
+            </li>
+            
+            <li class="menu__item">
+                <a class="menu__link" href="https://nanoninja.github.io/golangbook/basics/variables/">Variables</a>
+            </li>
+            
+            <li class="menu__item">
+                <a class="menu__link" href="https://nanoninja.github.io/golangbook/basics/constantes/">Constantes</a>
+            </li>
+            
+            <li class="menu__item">
+                <a class="menu__link" href="https://nanoninja.github.io/golangbook/basics/blank/">Identifiant blanc _</a>
+            </li>
+            
+            <li class="menu__item">
+                <a class="menu__link" href="https://nanoninja.github.io/golangbook/basics/scope/">Portée des variables</a>
+            </li>
+            
+            <li class="menu__item">
+                <a class="menu__link" href="https://nanoninja.github.io/golangbook/basics/fmt/">Package fmt</a>
+            </li>
+            
+            <li class="menu__item">
+                <a class="menu__link" href="https://nanoninja.github.io/golangbook/basics/control-flow/">Contrôle de flux</a>
+            </li>
+            
+        </ol>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="menu__item">
+        <a class="menu__link" href="https://nanoninja.github.io/golangbook/collections/">Collections</a>
+        <ol class="menu__nav menu--sub">
+            
+            <li class="menu__item">
+                <a class="menu__link" href="https://nanoninja.github.io/golangbook/collections/arrays/">Arrays</a>
+            </li>
+            
+            <li class="menu__item">
+                <a class="menu__link" href="https://nanoninja.github.io/golangbook/collections/slices/">Slices</a>
+            </li>
+            
+            <li class="menu__item">
+                <a class="menu__link" href="https://nanoninja.github.io/golangbook/collections/maps/">Maps</a>
+            </li>
+            
+        </ol>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="menu__item">
+        <a class="menu__link" href="https://nanoninja.github.io/golangbook/pointers/">Pointers</a>
+        <ol class="menu__nav menu--sub">
+            
+        </ol>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="menu__item">
+        <a class="menu__link" href="https://nanoninja.github.io/golangbook/functions/">Fonctions</a>
+        <ol class="menu__nav menu--sub">
+            
+            <li class="menu__item">
+                <a class="menu__link" href="https://nanoninja.github.io/golangbook/functions/defer/">Defer</a>
+            </li>
+            
+        </ol>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="menu__item">
+        <a class="menu__link" href="https://nanoninja.github.io/golangbook/errors/">Gestion des erreurs</a>
+        <ol class="menu__nav menu--sub">
+            
+            <li class="menu__item">
+                <a class="menu__link" href="https://nanoninja.github.io/golangbook/errors/recover/">Panic et Recover</a>
+            </li>
+            
+        </ol>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="menu__item">
+        <a class="menu__link" href="https://nanoninja.github.io/golangbook/structs/">Structs</a>
+        <ol class="menu__nav menu--sub">
+            
+        </ol>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="menu__item">
+        <a class="menu__link" href="https://nanoninja.github.io/golangbook/interfaces/">Interfaces</a>
+        <ol class="menu__nav menu--sub">
+            
+        </ol>
+    </li>
+    
+
+    
+
+    
+
+    
+    <li class="menu__item">
+        <a class="menu__link" href="https://nanoninja.github.io/golangbook/goroutines/">Goroutines</a>
+        <ol class="menu__nav menu--sub">
+            
+        </ol>
+    </li>
+    
+
+    
+
+    
+
+    
+    <li class="menu__item">
+        <a class="menu__link" href="https://nanoninja.github.io/golangbook/channels/">Channels</a>
+        <ol class="menu__nav menu--sub">
+            
+        </ol>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+</ol>
+
+        </nav>
+    </div>
+</aside><main>
+<div class="container">
+    <h1>Package fmt</h1>
+
+    <section class="summary">
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#afficher-le-type-dune-valeur">Afficher le type d&rsquo;une valeur</a></li>
+    <li><a href="#afficher-un-booléen">Afficher un booléen</a></li>
+    <li><a href="#afficher-la-valeur-dun-entier-en-base-10">Afficher la valeur d&rsquo;un entier en base 10</a></li>
+    <li><a href="#afficher-la-représentation-binaire-dun-entier">Afficher la représentation binaire d&rsquo;un entier</a></li>
+    <li><a href="#afficher-les-nombres-à-virgule-flottante">Afficher les nombres à virgule flottante</a></li>
+    <li><a href="#afficher-la-représentation-hexadécimale">Afficher la représentation hexadécimale</a></li>
+    <li><a href="#afficher-une-valeur-brute">Afficher une valeur brute</a></li>
+    <li><a href="#afficher-une-chaînes-de-caractères-entre-guillemets">Afficher une chaînes de caractères entre guillemets</a></li>
+    <li><a href="#afficher-ladresse-mémoire-dun-pointer">Afficher l&rsquo;adresse mémoire d&rsquo;un pointer</a></li>
+    <li><a href="#manipuler-lordre-des-verbes">Manipuler l&rsquo;ordre des verbes</a></li>
+    <li><a href="#scanner-une-chaîne-de-caractères">Scanner une chaîne de caractères</a></li>
+  </ul>
+</nav>
+    </section>
+
+    <section class="content">
+        <p>Le package <strong><em>fmt</em></strong> implémente des entrées/sorties formatées avec des fonctions analogues aux printf et scanf du language C.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>go doc fmt.Print
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>package fmt // import <span style="color:#e6db74">&#34;fmt&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>func Print<span style="color:#f92672">(</span>a ...interface<span style="color:#f92672">{})</span> <span style="color:#f92672">(</span>n int, err error<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>    Print formats using the default formats <span style="color:#66d9ef">for</span> its operands and writes to
+</span></span><span style="display:flex;"><span>    standard output. Spaces are added between operands when neither is a string.
+</span></span><span style="display:flex;"><span>    It returns the number of bytes written and any write error encountered.
+</span></span></code></pre></div><h2 id="afficher-le-type-dune-valeur">Afficher le type d&rsquo;une valeur</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Printf</span>(<span style="color:#e6db74">&#34;%T \n&#34;</span>, <span style="color:#ae81ff">128</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Printf</span>(<span style="color:#e6db74">&#34;%T \n&#34;</span>, <span style="color:#e6db74">&#34;Gopher&#34;</span>)
+</span></span></code></pre></div><h2 id="afficher-un-booléen">Afficher un booléen</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Printf</span>(<span style="color:#e6db74">&#34;%t \n&#34;</span>, <span style="color:#66d9ef">true</span>)     <span style="color:#75715e">// true
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Printf</span>(<span style="color:#e6db74">&#34;%t \n&#34;</span>, <span style="color:#66d9ef">false</span>)    <span style="color:#75715e">// false
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Printf</span>(<span style="color:#e6db74">&#34;%t \n&#34;</span>, <span style="color:#ae81ff">10</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">10</span>) <span style="color:#75715e">// true
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Printf</span>(<span style="color:#e6db74">&#34;%t \n&#34;</span>, <span style="color:#ae81ff">10</span> &gt; <span style="color:#ae81ff">100</span>) <span style="color:#75715e">// false
+</span></span></span></code></pre></div><h2 id="afficher-la-valeur-dun-entier-en-base-10">Afficher la valeur d&rsquo;un entier en base 10</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Printf</span>(<span style="color:#e6db74">&#34;%d \n&#34;</span>, <span style="color:#ae81ff">255</span>)     <span style="color:#75715e">// 255
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Printf</span>(<span style="color:#e6db74">&#34;%d \n&#34;</span>, <span style="color:#ae81ff">128</span><span style="color:#f92672">+</span><span style="color:#ae81ff">127</span>) <span style="color:#75715e">// 255
+</span></span></span></code></pre></div><h2 id="afficher-la-représentation-binaire-dun-entier">Afficher la représentation binaire d&rsquo;un entier</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Printf</span>(<span style="color:#e6db74">&#34;%8b \n&#34;</span>, <span style="color:#ae81ff">45</span>)  <span style="color:#75715e">//   101101
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Printf</span>(<span style="color:#e6db74">&#34;%08b \n&#34;</span>, <span style="color:#ae81ff">45</span>) <span style="color:#75715e">// 00101101
+</span></span></span></code></pre></div><h2 id="afficher-les-nombres-à-virgule-flottante">Afficher les nombres à virgule flottante</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Printf</span>(<span style="color:#e6db74">&#34;%f \n&#34;</span>, <span style="color:#ae81ff">23.7823</span>)     <span style="color:#75715e">// 23.7823
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Printf</span>(<span style="color:#e6db74">&#34;%.2f \n&#34;</span>, <span style="color:#a6e22e">math</span>.<span style="color:#a6e22e">Pi</span>)   <span style="color:#75715e">// 3.14
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Printf</span>(<span style="color:#e6db74">&#34;%06.f \n&#34;</span>, <span style="color:#ae81ff">2450.210</span>) <span style="color:#75715e">// 002450
+</span></span></span></code></pre></div><h2 id="afficher-la-représentation-hexadécimale">Afficher la représentation hexadécimale</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Printf</span>(<span style="color:#e6db74">&#34;%x \n&#34;</span>, <span style="color:#ae81ff">2500</span>)  <span style="color:#75715e">// 9c4   valeur sans préfix en minuscule
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Printf</span>(<span style="color:#e6db74">&#34;%X \n&#34;</span>, <span style="color:#ae81ff">2500</span>)  <span style="color:#75715e">// 9C4   valeur sans préfix en majuscule
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Printf</span>(<span style="color:#e6db74">&#34;%#x \n&#34;</span>, <span style="color:#ae81ff">2500</span>) <span style="color:#75715e">// 0x9c4 valeur avec préfix en minuscule
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Printf</span>(<span style="color:#e6db74">&#34;%#X \n&#34;</span>, <span style="color:#ae81ff">2500</span>) <span style="color:#75715e">// 0X9C4 valeur avec préfix en majuscule
+</span></span></span></code></pre></div><h2 id="afficher-une-valeur-brute">Afficher une valeur brute</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Printf</span>(<span style="color:#e6db74">&#34;%v \n&#34;</span>, <span style="color:#e6db74">&#34;Gopher&#34;</span>)  <span style="color:#75715e">// Gopher
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Printf</span>(<span style="color:#e6db74">&#34;%#v \n&#34;</span>, <span style="color:#e6db74">&#34;Gopher&#34;</span>) <span style="color:#75715e">// &#34;Gopher&#34;
+</span></span></span></code></pre></div><h2 id="afficher-une-chaînes-de-caractères-entre-guillemets">Afficher une chaînes de caractères entre guillemets</h2>
+<p>Affiche une chaîne entre guillemets échappée en toute sécurité :</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Printf</span>(<span style="color:#e6db74">&#34;%q %q \n&#34;</span>, <span style="color:#e6db74">&#34;Hello&#34;</span>, <span style="color:#e6db74">&#34;Gopher&#34;</span>) <span style="color:#75715e">// &#34;Hello&#34; &#34;Gopher&#34; 
+</span></span></span></code></pre></div><h2 id="afficher-ladresse-mémoire-dun-pointer">Afficher l&rsquo;adresse mémoire d&rsquo;un pointer</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">a</span> <span style="color:#f92672">*</span><span style="color:#66d9ef">int</span> = new(<span style="color:#66d9ef">int</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Printf</span>(<span style="color:#e6db74">&#34;%p \n&#34;</span>, <span style="color:#a6e22e">a</span>) <span style="color:#75715e">// 0xc000130000 
+</span></span></span></code></pre></div><h2 id="manipuler-lordre-des-verbes">Manipuler l&rsquo;ordre des verbes</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Printf</span>(<span style="color:#e6db74">&#34;Swap: %[2]s %[1]s \n&#34;</span>, <span style="color:#e6db74">&#34;Gopher&#34;</span>, <span style="color:#e6db74">&#34;Hello&#34;</span>) <span style="color:#75715e">// Swap: Hello Gopher
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Printf</span>(<span style="color:#e6db74">&#34;Swap: %[2]d %.2[1]f \n&#34;</span>, <span style="color:#a6e22e">math</span>.<span style="color:#a6e22e">Pi</span>, <span style="color:#ae81ff">360</span>) <span style="color:#75715e">// Swap: 360 3.14 
+</span></span></span></code></pre></div><h2 id="scanner-une-chaîne-de-caractères">Scanner une chaîne de caractères</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> <span style="color:#e6db74">&#34;fmt&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">main</span>() {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">name</span> <span style="color:#66d9ef">string</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">age</span> <span style="color:#66d9ef">uint8</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Print</span>(<span style="color:#e6db74">&#34;Entrez un nom et un age : &#34;</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Scanf</span>(<span style="color:#e6db74">&#34;%s %d&#34;</span>, <span style="color:#f92672">&amp;</span><span style="color:#a6e22e">name</span>, <span style="color:#f92672">&amp;</span><span style="color:#a6e22e">age</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Printf</span>(<span style="color:#e6db74">&#34;Bonjour %s, vous avez %d \n&#34;</span>, <span style="color:#a6e22e">name</span>, <span style="color:#a6e22e">age</span>)
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div>
+    </section>
+</div>
+
+        </main><footer class="footer">
+    <div class="navbar navbar--border-t">
+        <div class="copyright">©2022 Vincent</div>
+    </div>
+</footer>
+
+<script type="text/javascript">
+const btn = document.querySelector('.sidebar__body h3');
+
+btn.addEventListener('click', e => {
+    if (localStorage.getItem('darkmode') === 'dark') {
+        localStorage.setItem('darkmode', 'light');
+        document.documentElement.setAttribute('data-theme', 'light');
+    } else {
+        localStorage.setItem('darkmode', 'dark');
+        document.documentElement.setAttribute('data-theme', 'dark');
+    }
+});
+</script>
+
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [
+                ['$', '$'],
+                ['\\(', '\\)']
+            ],
+            displayMath: [
+                ['$$', '$$']
+            ],
+            processEscapes: true,
+            processEnvironments: true,
+            skipTags: ['script', 'noscript', 'style', 'textarea'],
+            TeX: {
+                equationNumbers: {
+                    autoNumber: "AMS"
+                },
+                extensions: ["AMSmath.js", "AMSsymbols.js"]
+            }
+        }
+    });
+
+    MathJax.Hub.Queue(function () {
+        var all = MathJax.Hub.getAllJax();
+        var i;
+
+        for (i = 0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' language-jax';
+        }
+    });
+</script></body>
+</html>

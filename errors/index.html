@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr"><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion des erreurs</title>
+    <link rel="stylesheet" href="/golangbook/sass/main.css">
+</head><body dir="ltr" data-theme="dark"><header class="header">
+    
+</header><aside class="sidebar">
+    <div class="sidebar__body">
+        <nav class="menu">
+<ol class="menu__nav">
+    <li class="menu__item">
+        <h3>Tables des matières</h3>
+    </li>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="menu__item">
+        <a class="menu__link" href="https://nanoninja.github.io/golangbook/">Accueil</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="menu__item">
+        <a class="menu__link" href="https://nanoninja.github.io/golangbook/introduction/">Introduction</a>
+        <ol class="menu__nav menu--sub">
+            
+            <li class="menu__item">
+                <a class="menu__link" href="https://nanoninja.github.io/golangbook/introduction/historical/">Historique</a>
+            </li>
+            
+            <li class="menu__item">
+                <a class="menu__link" href="https://nanoninja.github.io/golangbook/introduction/phylosophy/">Principes et Philosophie</a>
+            </li>
+            
+            <li class="menu__item">
+                <a class="menu__link" href="https://nanoninja.github.io/golangbook/introduction/domains/">Domaines d&#39;application</a>
+            </li>
+            
+            <li class="menu__item">
+                <a class="menu__link" href="https://nanoninja.github.io/golangbook/introduction/resources/">Ressources</a>
+            </li>
+            
+        </ol>
+    </li>
+    
+
+    
+
+    
+
+    
+    <li class="menu__item">
+        <a class="menu__link" href="https://nanoninja.github.io/golangbook/installation/">Installation</a>
+        <ol class="menu__nav menu--sub">
+            
+            <li class="menu__item">
+                <a class="menu__link" href="https://nanoninja.github.io/golangbook/installation/commands/">Commandes</a>
+            </li>
+            
+            <li class="menu__item">
+                <a class="menu__link" href="https://nanoninja.github.io/golangbook/installation/workspace/">Espace de Travail</a>
+            </li>
+            
+        </ol>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="menu__item">
+        <a class="menu__link" href="https://nanoninja.github.io/golangbook/basics/">Bases du langage</a>
+        <ol class="menu__nav menu--sub">
+            
+            <li class="menu__item">
+                <a class="menu__link" href="https://nanoninja.github.io/golangbook/basics/hello-world/">Hello World</a>
+            </li>
+            
+            <li class="menu__item">
+                <a class="menu__link" href="https://nanoninja.github.io/golangbook/basics/packages/">Packages</a>
+            </li>
+            
+            <li class="menu__item">
+                <a class="menu__link" href="https://nanoninja.github.io/golangbook/basics/types/">Types de base</a>
+            </li>
+            
+            <li class="menu__item">
+                <a class="menu__link" href="https://nanoninja.github.io/golangbook/basics/variables/">Variables</a>
+            </li>
+            
+            <li class="menu__item">
+                <a class="menu__link" href="https://nanoninja.github.io/golangbook/basics/constantes/">Constantes</a>
+            </li>
+            
+            <li class="menu__item">
+                <a class="menu__link" href="https://nanoninja.github.io/golangbook/basics/blank/">Identifiant blanc _</a>
+            </li>
+            
+            <li class="menu__item">
+                <a class="menu__link" href="https://nanoninja.github.io/golangbook/basics/scope/">Portée des variables</a>
+            </li>
+            
+            <li class="menu__item">
+                <a class="menu__link" href="https://nanoninja.github.io/golangbook/basics/fmt/">Package fmt</a>
+            </li>
+            
+            <li class="menu__item">
+                <a class="menu__link" href="https://nanoninja.github.io/golangbook/basics/control-flow/">Contrôle de flux</a>
+            </li>
+            
+        </ol>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="menu__item">
+        <a class="menu__link" href="https://nanoninja.github.io/golangbook/collections/">Collections</a>
+        <ol class="menu__nav menu--sub">
+            
+            <li class="menu__item">
+                <a class="menu__link" href="https://nanoninja.github.io/golangbook/collections/arrays/">Arrays</a>
+            </li>
+            
+            <li class="menu__item">
+                <a class="menu__link" href="https://nanoninja.github.io/golangbook/collections/slices/">Slices</a>
+            </li>
+            
+            <li class="menu__item">
+                <a class="menu__link" href="https://nanoninja.github.io/golangbook/collections/maps/">Maps</a>
+            </li>
+            
+        </ol>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="menu__item">
+        <a class="menu__link" href="https://nanoninja.github.io/golangbook/pointers/">Pointers</a>
+        <ol class="menu__nav menu--sub">
+            
+        </ol>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="menu__item">
+        <a class="menu__link" href="https://nanoninja.github.io/golangbook/functions/">Fonctions</a>
+        <ol class="menu__nav menu--sub">
+            
+            <li class="menu__item">
+                <a class="menu__link" href="https://nanoninja.github.io/golangbook/functions/defer/">Defer</a>
+            </li>
+            
+        </ol>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="menu__item">
+        <a class="menu__link" href="https://nanoninja.github.io/golangbook/errors/">Gestion des erreurs</a>
+        <ol class="menu__nav menu--sub">
+            
+            <li class="menu__item">
+                <a class="menu__link" href="https://nanoninja.github.io/golangbook/errors/recover/">Panic et Recover</a>
+            </li>
+            
+        </ol>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="menu__item">
+        <a class="menu__link" href="https://nanoninja.github.io/golangbook/structs/">Structs</a>
+        <ol class="menu__nav menu--sub">
+            
+        </ol>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="menu__item">
+        <a class="menu__link" href="https://nanoninja.github.io/golangbook/interfaces/">Interfaces</a>
+        <ol class="menu__nav menu--sub">
+            
+        </ol>
+    </li>
+    
+
+    
+
+    
+
+    
+    <li class="menu__item">
+        <a class="menu__link" href="https://nanoninja.github.io/golangbook/goroutines/">Goroutines</a>
+        <ol class="menu__nav menu--sub">
+            
+        </ol>
+    </li>
+    
+
+    
+
+    
+
+    
+    <li class="menu__item">
+        <a class="menu__link" href="https://nanoninja.github.io/golangbook/channels/">Channels</a>
+        <ol class="menu__nav menu--sub">
+            
+        </ol>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+</ol>
+
+        </nav>
+    </div>
+</aside><main>
+<div class="container">
+
+    <h1>Gestion des erreurs</h1>
+
+    <section class="summary">
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#renvoyer-une-erreur-depuis-une-fonction">Renvoyer une erreur depuis une fonction</a></li>
+    <li><a href="#créer-une-erreur-avec-avec-le-package-errors">Créer une erreur avec avec le package errors</a></li>
+    <li><a href="#créer-des-erreurs-réutilisables">Créer des erreurs réutilisables</a></li>
+  </ul>
+</nav>
+    </section>
+
+    <section class="content">
+        <p>Go est un langage qui encourage fortement le traitement des erreurs. Il fournit une interface <a href="https://pkg.go.dev/errors"><strong><em>error</em></strong></a> qui renvoie un chaîne de caractère de type string. On s&rsquo;appuie généralement sur le retour multiple des fonctions pour renvoyer une erreur si elle survient. La valeur d&rsquo;une erreur est une chaîne de caractères correspondant au message, soit à <strong><em>nil</em></strong> qui signifie qu&rsquo;il n&rsquo;y a pas d&rsquo;erreur.</p>
+<p>La fonction <strong><em>Errorf</em></strong> du package <strong><em>fmt</em></strong> permet de créer une erreur et de la formater sans passer par le package errors.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> <span style="color:#e6db74">&#34;fmt&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">main</span>() {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">err</span> <span style="color:#66d9ef">error</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#a6e22e">err</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">err</span> = <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Errorf</span>(<span style="color:#e6db74">&#34;une erreur est survenue&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#a6e22e">err</span>)
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Sortie :</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>&lt;nil&gt;
+</span></span><span style="display:flex;"><span>Une erreur est survenue
+</span></span></code></pre></div><h2 id="renvoyer-une-erreur-depuis-une-fonction">Renvoyer une erreur depuis une fonction</h2>
+<p>Renvoyer une erreur depuis une fonction est le cas le plus courant en Go. Si plusieurs valeurs sont retournée l&rsquo;erreur sera la dernière dans l&rsquo;ordre.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> <span style="color:#e6db74">&#34;fmt&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">divide</span>(<span style="color:#a6e22e">a</span>, <span style="color:#a6e22e">b</span> <span style="color:#66d9ef">int</span>) (<span style="color:#66d9ef">int</span>, <span style="color:#66d9ef">error</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> <span style="color:#a6e22e">b</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>, <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Errorf</span>(<span style="color:#e6db74">&#34;division by zero&#34;</span>)
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">a</span> <span style="color:#f92672">/</span> <span style="color:#a6e22e">b</span>, <span style="color:#66d9ef">nil</span>
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">main</span>() {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">result</span>, <span style="color:#a6e22e">err</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">divide</span>(<span style="color:#ae81ff">10</span>, <span style="color:#ae81ff">0</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> <span style="color:#a6e22e">err</span> <span style="color:#f92672">!=</span> <span style="color:#66d9ef">nil</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#a6e22e">err</span>)
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#a6e22e">result</span>)
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Sortie :</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>division by zero
+</span></span><span style="display:flex;"><span>0
+</span></span></code></pre></div><h2 id="créer-une-erreur-avec-avec-le-package-errors">Créer une erreur avec avec le package errors</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> (
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;errors&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;log&#34;</span>
+</span></span><span style="display:flex;"><span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">main</span>() {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">err</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">errors</span>.<span style="color:#a6e22e">New</span>(<span style="color:#e6db74">&#34;mon erreur&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> <span style="color:#a6e22e">err</span> <span style="color:#f92672">!=</span> <span style="color:#66d9ef">nil</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">log</span>.<span style="color:#a6e22e">Fatal</span>(<span style="color:#a6e22e">err</span>)
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Sortie :</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>2022/03/05 14:41:37 mon erreur
+</span></span><span style="display:flex;"><span>exit status 1
+</span></span></code></pre></div><h2 id="créer-des-erreurs-réutilisables">Créer des erreurs réutilisables</h2>
+<p>Créer des erreurs personnalisées depuis un package permet de les réutiliser.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> (
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;errors&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;fmt&#34;</span>
+</span></span><span style="display:flex;"><span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">var</span> (
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">ErrEntityNotFound</span> = <span style="color:#a6e22e">errors</span>.<span style="color:#a6e22e">New</span>(<span style="color:#e6db74">&#34;entity not found&#34;</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">ErrInvalidId</span>      = <span style="color:#a6e22e">errors</span>.<span style="color:#a6e22e">New</span>(<span style="color:#e6db74">&#34;invalid ID provided&#34;</span>)
+</span></span><span style="display:flex;"><span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">find</span>(<span style="color:#a6e22e">id</span> <span style="color:#66d9ef">string</span>) <span style="color:#66d9ef">error</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> <span style="color:#a6e22e">id</span> <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;&#34;</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">ErrInvalidId</span>
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">ErrEntityNotFound</span>
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">main</span>() {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">err</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">find</span>(<span style="color:#e6db74">&#34;&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> <span style="color:#a6e22e">errors</span>.<span style="color:#a6e22e">Is</span>(<span style="color:#a6e22e">err</span>, <span style="color:#a6e22e">ErrInvalidId</span>) {
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#a6e22e">err</span>)
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Sortie :</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>invalid ID provided
+</span></span></code></pre></div>
+    </section>
+
+</div>
+
+        </main><footer class="footer">
+    <div class="navbar navbar--border-t">
+        <div class="copyright">©2022 Vincent</div>
+    </div>
+</footer>
+
+<script type="text/javascript">
+const btn = document.querySelector('.sidebar__body h3');
+
+btn.addEventListener('click', e => {
+    if (localStorage.getItem('darkmode') === 'dark') {
+        localStorage.setItem('darkmode', 'light');
+        document.documentElement.setAttribute('data-theme', 'light');
+    } else {
+        localStorage.setItem('darkmode', 'dark');
+        document.documentElement.setAttribute('data-theme', 'dark');
+    }
+});
+</script>
+
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [
+                ['$', '$'],
+                ['\\(', '\\)']
+            ],
+            displayMath: [
+                ['$$', '$$']
+            ],
+            processEscapes: true,
+            processEnvironments: true,
+            skipTags: ['script', 'noscript', 'style', 'textarea'],
+            TeX: {
+                equationNumbers: {
+                    autoNumber: "AMS"
+                },
+                extensions: ["AMSmath.js", "AMSsymbols.js"]
+            }
+        }
+    });
+
+    MathJax.Hub.Queue(function () {
+        var all = MathJax.Hub.getAllJax();
+        var i;
+
+        for (i = 0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' language-jax';
+        }
+    });
+</script></body>
+</html>

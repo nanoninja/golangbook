@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr"><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Types de base</title>
+    <link rel="stylesheet" href="/golangbook/sass/main.css">
+</head><body dir="ltr" data-theme="dark"><header class="header">
+    
+</header><aside class="sidebar">
+    <div class="sidebar__body">
+        <nav class="menu">
+<ol class="menu__nav">
+    <li class="menu__item">
+        <h3>Tables des matières</h3>
+    </li>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="menu__item">
+        <a class="menu__link" href="https://nanoninja.github.io/golangbook/">Accueil</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="menu__item">
+        <a class="menu__link" href="https://nanoninja.github.io/golangbook/introduction/">Introduction</a>
+        <ol class="menu__nav menu--sub">
+            
+            <li class="menu__item">
+                <a class="menu__link" href="https://nanoninja.github.io/golangbook/introduction/historical/">Historique</a>
+            </li>
+            
+            <li class="menu__item">
+                <a class="menu__link" href="https://nanoninja.github.io/golangbook/introduction/phylosophy/">Principes et Philosophie</a>
+            </li>
+            
+            <li class="menu__item">
+                <a class="menu__link" href="https://nanoninja.github.io/golangbook/introduction/domains/">Domaines d&#39;application</a>
+            </li>
+            
+            <li class="menu__item">
+                <a class="menu__link" href="https://nanoninja.github.io/golangbook/introduction/resources/">Ressources</a>
+            </li>
+            
+        </ol>
+    </li>
+    
+
+    
+
+    
+
+    
+    <li class="menu__item">
+        <a class="menu__link" href="https://nanoninja.github.io/golangbook/installation/">Installation</a>
+        <ol class="menu__nav menu--sub">
+            
+            <li class="menu__item">
+                <a class="menu__link" href="https://nanoninja.github.io/golangbook/installation/commands/">Commandes</a>
+            </li>
+            
+            <li class="menu__item">
+                <a class="menu__link" href="https://nanoninja.github.io/golangbook/installation/workspace/">Espace de Travail</a>
+            </li>
+            
+        </ol>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="menu__item">
+        <a class="menu__link" href="https://nanoninja.github.io/golangbook/basics/">Bases du langage</a>
+        <ol class="menu__nav menu--sub">
+            
+            <li class="menu__item">
+                <a class="menu__link" href="https://nanoninja.github.io/golangbook/basics/hello-world/">Hello World</a>
+            </li>
+            
+            <li class="menu__item">
+                <a class="menu__link" href="https://nanoninja.github.io/golangbook/basics/packages/">Packages</a>
+            </li>
+            
+            <li class="menu__item">
+                <a class="menu__link" href="https://nanoninja.github.io/golangbook/basics/types/">Types de base</a>
+            </li>
+            
+            <li class="menu__item">
+                <a class="menu__link" href="https://nanoninja.github.io/golangbook/basics/variables/">Variables</a>
+            </li>
+            
+            <li class="menu__item">
+                <a class="menu__link" href="https://nanoninja.github.io/golangbook/basics/constantes/">Constantes</a>
+            </li>
+            
+            <li class="menu__item">
+                <a class="menu__link" href="https://nanoninja.github.io/golangbook/basics/blank/">Identifiant blanc _</a>
+            </li>
+            
+            <li class="menu__item">
+                <a class="menu__link" href="https://nanoninja.github.io/golangbook/basics/scope/">Portée des variables</a>
+            </li>
+            
+            <li class="menu__item">
+                <a class="menu__link" href="https://nanoninja.github.io/golangbook/basics/fmt/">Package fmt</a>
+            </li>
+            
+            <li class="menu__item">
+                <a class="menu__link" href="https://nanoninja.github.io/golangbook/basics/control-flow/">Contrôle de flux</a>
+            </li>
+            
+        </ol>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="menu__item">
+        <a class="menu__link" href="https://nanoninja.github.io/golangbook/collections/">Collections</a>
+        <ol class="menu__nav menu--sub">
+            
+            <li class="menu__item">
+                <a class="menu__link" href="https://nanoninja.github.io/golangbook/collections/arrays/">Arrays</a>
+            </li>
+            
+            <li class="menu__item">
+                <a class="menu__link" href="https://nanoninja.github.io/golangbook/collections/slices/">Slices</a>
+            </li>
+            
+            <li class="menu__item">
+                <a class="menu__link" href="https://nanoninja.github.io/golangbook/collections/maps/">Maps</a>
+            </li>
+            
+        </ol>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="menu__item">
+        <a class="menu__link" href="https://nanoninja.github.io/golangbook/pointers/">Pointers</a>
+        <ol class="menu__nav menu--sub">
+            
+        </ol>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="menu__item">
+        <a class="menu__link" href="https://nanoninja.github.io/golangbook/functions/">Fonctions</a>
+        <ol class="menu__nav menu--sub">
+            
+            <li class="menu__item">
+                <a class="menu__link" href="https://nanoninja.github.io/golangbook/functions/defer/">Defer</a>
+            </li>
+            
+        </ol>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="menu__item">
+        <a class="menu__link" href="https://nanoninja.github.io/golangbook/errors/">Gestion des erreurs</a>
+        <ol class="menu__nav menu--sub">
+            
+            <li class="menu__item">
+                <a class="menu__link" href="https://nanoninja.github.io/golangbook/errors/recover/">Panic et Recover</a>
+            </li>
+            
+        </ol>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="menu__item">
+        <a class="menu__link" href="https://nanoninja.github.io/golangbook/structs/">Structs</a>
+        <ol class="menu__nav menu--sub">
+            
+        </ol>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="menu__item">
+        <a class="menu__link" href="https://nanoninja.github.io/golangbook/interfaces/">Interfaces</a>
+        <ol class="menu__nav menu--sub">
+            
+        </ol>
+    </li>
+    
+
+    
+
+    
+
+    
+    <li class="menu__item">
+        <a class="menu__link" href="https://nanoninja.github.io/golangbook/goroutines/">Goroutines</a>
+        <ol class="menu__nav menu--sub">
+            
+        </ol>
+    </li>
+    
+
+    
+
+    
+
+    
+    <li class="menu__item">
+        <a class="menu__link" href="https://nanoninja.github.io/golangbook/channels/">Channels</a>
+        <ol class="menu__nav menu--sub">
+            
+        </ol>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+</ol>
+
+        </nav>
+    </div>
+</aside><main>
+<div class="container">
+    <h1>Types de base</h1>
+
+    <section class="summary">
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#inférence-des-types">Inférence des types</a></li>
+    <li><a href="#booléan">Booléan</a></li>
+    <li><a href="#entiers">Entiers</a></li>
+    <li><a href="#nombres-à-virgule-flottante">Nombres à virgule flottante</a></li>
+    <li><a href="#nombres-complexes">Nombres complexes</a></li>
+    <li><a href="#chaînes-de-caractères">Chaînes de caractères</a></li>
+    <li><a href="#interface">Interface</a></li>
+  </ul>
+</nav>
+    </section>
+
+    <section class="content">
+        <p>Go est un langage de programmation à typage statique. Cela signifie que les variables ont toujours un type spécifique défini par le programmeur et que ce type ne peut pas changer. Le compilateur peut ainsi détecter les erreurs de type avant l&rsquo;exécution pour obtenir la sûreté du typage. Le langage propose aussi un puissant mécanisme d&rsquo;inférence de type. Go est livré avec plusieurs types de données par défaut que nous allons examiner plus en détail.</p>
+<hr>
+<h2 id="inférence-des-types">Inférence des types</h2>
+<p>L&rsquo;inférence de types est un mécanisme qui permet à un compilateur ou un interpréteur de rechercher automatiquement les types associés à des expressions, sans qu&rsquo;ils soient indiqués explicitement dans le code source.</p>
+<p>Exemple avec avec Go  :</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#a6e22e">name</span> <span style="color:#f92672">:=</span> <span style="color:#e6db74">&#34;Gopher&#34;</span>
+</span></span></code></pre></div><h2 id="booléan">Booléan</h2>
+<p>Un type booléen représente l&rsquo;ensemble des valeurs de vérité booléennes désignées par les constantes <strong>true</strong> et <strong>false</strong>. Le type booléen prédéclaré est bool.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>true ou false
+</span></span></code></pre></div><h2 id="entiers">Entiers</h2>
+<p>Les nombres <strong>8</strong>, <strong>16</strong>, <strong>32</strong> et <strong>64</strong> nous indiquent combien de bits chacun des types utilise. <strong>int</strong> signifie <strong>integer</strong> et la lettre <strong>u</strong> signifie <strong>Unsigned</strong> qui représente un entier non signé.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Signature</th>
+<th style="text-align:left">Type</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Entiers non signés</td>
+<td style="text-align:left">uint8 ou byte</td>
+<td style="text-align:left">0 à 255</td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left">uint16</td>
+<td style="text-align:left">0 à 65 535</td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left">uint32</td>
+<td style="text-align:left">0 à 4 294 967 295</td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left">uint64</td>
+<td style="text-align:left">0 à 18 446 744 073 709 551 615</td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left">uint</td>
+<td style="text-align:left">uint32 ou uint64</td>
+</tr>
+<tr>
+<td style="text-align:left">Entiers signés</td>
+<td style="text-align:left">int8</td>
+<td style="text-align:left">-128 à 127</td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left">int16</td>
+<td style="text-align:left">-32 768 à 32 767</td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left">int32 (rune unicode)</td>
+<td style="text-align:left">-2 147 483 648 à 2 147 483 647</td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left">int64</td>
+<td style="text-align:left">-9 223 372 036 854 775 808 à 9 223 372 036 854 775 807</td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left">int</td>
+<td style="text-align:left">int32 ou int64</td>
+</tr>
+</tbody>
+</table>
+<p>Si la valeur d&rsquo;un entier dépasse la plage autorisée par un type le code ne compilera pas et vous obtiendrez une erreur.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> <span style="color:#e6db74">&#34;fmt&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">main</span>() {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">n1</span> <span style="color:#66d9ef">int8</span> = <span style="color:#ae81ff">128</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">n2</span> <span style="color:#66d9ef">uint8</span> = <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#a6e22e">n1</span>, <span style="color:#a6e22e">n2</span>)
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>go run main.go
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># command-line-arguments</span>
+</span></span><span style="display:flex;"><span>./main.go:6:6: constant <span style="color:#ae81ff">128</span> overflows int8
+</span></span><span style="display:flex;"><span>./main.go:7:6: constant -1 overflows uint8
+</span></span></code></pre></div><p>Chaque entier est une représentation binaire comprise entre 8 et 64 bits. Le premier bit indiquant le signe, 0 pour positif et 1 pour négatif. Que se passerait il si on incrémentait la valeur d&rsquo;un entier qui ferait dépasser la plage autorisée ?</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> <span style="color:#e6db74">&#34;fmt&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">main</span>() {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">n</span> <span style="color:#66d9ef">int8</span> = <span style="color:#ae81ff">127</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">n</span><span style="color:#f92672">++</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#a6e22e">n</span>)
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>go run main.go
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>-128
+</span></span></code></pre></div><p>Tableau de représentation binaire :</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>  7    6    5    4   3   2   1   0  -&gt; 8 bits
+</span></span><span style="display:flex;"><span>---------------------------------------------
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>128   64   32   16   8   4   2   1 
+</span></span><span style="display:flex;"><span>  0    1    1    1   1   1   1   1  -&gt;  127
+</span></span><span style="display:flex;"><span>  0    0    0    0   0   0   0   1  -&gt;  + 1
+</span></span><span style="display:flex;"><span>  1    0    0    0   0   0   0   0  -&gt; -128
+</span></span></code></pre></div><p>En ajoutant 1 à l&rsquo;entier 127 le premier bit de la représentation binaire est passé de 0 à 1 et en binaire 1 + 1 = 10. Le résultat obtenu nous indique une valeur de 0 et un signe négatif.</p>
+<p>Méthode de calcul pour les nombres signés [négatif, positif] : $2^{n-1}$, $2^{n-1}-1$</p>
+<p>4 bits (-8, 7) =  $2^3$, $2^3-1$</p>
+<p>8 bits (-128, 127) =  $2^7$, $2^7-1$</p>
+<p>Le calcule d&rsquo;un entier négatif sur n bits s&rsquo;effectue en calculant l&rsquo;entier positif sur les n-1 bits qui ne sont pas des bits de signe, puis en retranchant $2^{n-1}$ dans notre cas 27 = 128. Voir la méthode de <a href="https://fr.wikipedia.org/wiki/Compl%C3%A9ment_%C3%A0_deux"><strong>complément à deux</strong></a>.</p>
+<p>Afficher la représentation binaire d&rsquo;un entier :</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Printf</span>(<span style="color:#e6db74">&#34;%08b %08b \n&#34;</span>, <span style="color:#f92672">-</span><span style="color:#ae81ff">128</span>, <span style="color:#ae81ff">127</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">-</span><span style="color:#ae81ff">10000000</span> <span style="color:#ae81ff">01111111</span>
+</span></span></code></pre></div><p>Afficher un entier depuis sa représentation binaire :</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#a6e22e">n1</span>, <span style="color:#a6e22e">_</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">strconv</span>.<span style="color:#a6e22e">ParseInt</span>(<span style="color:#e6db74">&#34;-10000000&#34;</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">8</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">n2</span>, <span style="color:#a6e22e">_</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">strconv</span>.<span style="color:#a6e22e">ParseInt</span>(<span style="color:#e6db74">&#34;01111111&#34;</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">8</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#a6e22e">n1</span>, <span style="color:#a6e22e">n2</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">-</span><span style="color:#ae81ff">128</span> <span style="color:#ae81ff">127</span>
+</span></span></code></pre></div><h2 id="nombres-à-virgule-flottante">Nombres à virgule flottante</h2>
+<p>Les nombres à virgule flottante sont conformes aux normes numériques <a href="https://fr.wikipedia.org/wiki/IEEE_754">IEEE-754</a>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>float32   précision simple
+</span></span><span style="display:flex;"><span>float64   précision double
+</span></span></code></pre></div><h2 id="nombres-complexes">Nombres complexes</h2>
+<p>Le type complex64 où la partie réelle et la partie imaginaire sont codées sous forme de float32 et complex128 où la partie réelle et la partie imaginaire sont codées sous forme de float64.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>complex64   nombres avec parties réelles et imaginaires float32
+</span></span><span style="display:flex;"><span>complex128  nombres avec parties réelles et imaginaires float64
+</span></span></code></pre></div><h2 id="chaînes-de-caractères">Chaînes de caractères</h2>
+<p>Une chaîne de caractères est une séquence d&rsquo;octets de type <strong>uint8</strong> définie par le mot clé <strong>string</strong>.</p>
+<h2 id="interface">Interface</h2>
+<p>Le type <strong>interface{}</strong> signifie n&rsquo;importe quel type et sera détaillé plus loin. Pour le moment vous devez savoir qu&rsquo;il est utilisé comme type passe partout.</p>
+<p>Par exemple la fonction <strong><em>Println</em></strong> du package <strong><em>fmt</em></strong> prend en argument une valeur de type interface{}, ça veut dire que la valeur peut-être un entier, une chaîne de caractères ou n&rsquo;importe quel type d&rsquo;expression.</p>
+<p>Il n&rsquo;y a rien entre les accolades car elles sont principalement utilisées dans le contexte objet pour y déclarer des méthodes.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> <span style="color:#e6db74">&#34;fmt&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">main</span>() {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">value</span> <span style="color:#66d9ef">interface</span>{}
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#a6e22e">value</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">value</span> = <span style="color:#e6db74">&#34;Gopher&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#a6e22e">value</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">value</span> = <span style="color:#ae81ff">2009</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#a6e22e">value</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">value</span> = []<span style="color:#66d9ef">string</span>{<span style="color:#e6db74">&#34;Hello&#34;</span>, <span style="color:#e6db74">&#34;Gophers&#34;</span>}
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#a6e22e">value</span>)
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div>
+    </section>
+</div>
+
+        </main><footer class="footer">
+    <div class="navbar navbar--border-t">
+        <div class="copyright">©2022 Vincent</div>
+    </div>
+</footer>
+
+<script type="text/javascript">
+const btn = document.querySelector('.sidebar__body h3');
+
+btn.addEventListener('click', e => {
+    if (localStorage.getItem('darkmode') === 'dark') {
+        localStorage.setItem('darkmode', 'light');
+        document.documentElement.setAttribute('data-theme', 'light');
+    } else {
+        localStorage.setItem('darkmode', 'dark');
+        document.documentElement.setAttribute('data-theme', 'dark');
+    }
+});
+</script>
+
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [
+                ['$', '$'],
+                ['\\(', '\\)']
+            ],
+            displayMath: [
+                ['$$', '$$']
+            ],
+            processEscapes: true,
+            processEnvironments: true,
+            skipTags: ['script', 'noscript', 'style', 'textarea'],
+            TeX: {
+                equationNumbers: {
+                    autoNumber: "AMS"
+                },
+                extensions: ["AMSmath.js", "AMSsymbols.js"]
+            }
+        }
+    });
+
+    MathJax.Hub.Queue(function () {
+        var all = MathJax.Hub.getAllJax();
+        var i;
+
+        for (i = 0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' language-jax';
+        }
+    });
+</script></body>
+</html>

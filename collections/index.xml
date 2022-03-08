@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Collections on Formation Go</title>
+    <link>https://nanoninja.github.io/golangbook/collections/</link>
+    <description>Recent content in Collections on Formation Go</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 22 Feb 2022 08:56:02 +0100</lastBuildDate><atom:link href="https://nanoninja.github.io/golangbook/collections/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Arrays</title>
+      <link>https://nanoninja.github.io/golangbook/collections/arrays/</link>
+      <pubDate>Tue, 22 Feb 2022 09:03:40 +0100</pubDate>
+      
+      <guid>https://nanoninja.github.io/golangbook/collections/arrays/</guid>
+      <description>Un tableau est une collection de taille fixe composé d&amp;rsquo;éléments de même type et peut avoir plusieurs dimensions. Les éléments sont indicés de 0 à n, L&amp;rsquo;opérateur [ ] permet lors de la création de définir la taille fixe du tableau et à l&amp;rsquo;utilisation d&amp;rsquo;accéder directement à un élément dont l&amp;rsquo;indice est donnée.
+var a [taille]Type Créer un tableau avec le mot-clé var package main  import &amp;#34;fmt&amp;#34;  func main() {  var a [3]string   fmt.</description>
+    </item>
+    
+    <item>
+      <title>Slices</title>
+      <link>https://nanoninja.github.io/golangbook/collections/slices/</link>
+      <pubDate>Tue, 22 Feb 2022 09:03:49 +0100</pubDate>
+      
+      <guid>https://nanoninja.github.io/golangbook/collections/slices/</guid>
+      <description>Un slice est une collection de taille fixe pouvant évoluer soit en effectuant un découpage (slicing) diminuant la taille, soit en utilisant la fonction append() pour ajouter des éléments. Comme le tableau, le slice est composé d&amp;rsquo;éléments de même type et peut posséder plusieurs dimensions.
+var s []type Déclarer un slice var s []int  s := []int{} Initialiser un slice avec la fonction make La fonction make permet d&amp;rsquo;initialiser un slice pour un type d&amp;rsquo;élément donné, en spécifiant une taille et éventuellement sa capacité.</description>
+    </item>
+    
+    <item>
+      <title>Maps</title>
+      <link>https://nanoninja.github.io/golangbook/collections/maps/</link>
+      <pubDate>Tue, 22 Feb 2022 09:03:59 +0100</pubDate>
+      
+      <guid>https://nanoninja.github.io/golangbook/collections/maps/</guid>
+      <description>Une carte (map) est une collection de paires clé-valeur non ordonnées. Les cartes sont souvent appelées dictionnaires, tableaux associatifs, hashages dans d’autres langages de programmation. Elles sont utilisées pour stocker des données associées et y accéder en fonction des clés uniques. La valeur d’une carte non initialisée est nil.
+var m map[keyType]ElementType var m1 map[string]string var m2 map[string]interface{}  m3 := map[string]string{} m4 := map[string]int{&amp;#34;a&amp;#34;: 1, &amp;#34;b&amp;#34;: 2} Lire et modifier une map package main  import &amp;#34;fmt&amp;#34;  func main() {  m := map[string]string{  &amp;#34;name&amp;#34;: &amp;#34;Gauffre&amp;#34;,  &amp;#34;city&amp;#34;: &amp;#34;Denver&amp;#34;,  }   m[&amp;#34;name&amp;#34;] = &amp;#34;Gopher&amp;#34;  m[&amp;#34;langage&amp;#34;] = &amp;#34;Go&amp;#34;   fmt.</description>
+    </item>
+    
+  </channel>
+</rss>

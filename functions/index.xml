@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Fonctions on Formation Go</title>
+    <link>https://nanoninja.github.io/golangbook/functions/</link>
+    <description>Recent content in Fonctions on Formation Go</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 22 Feb 2022 08:56:15 +0100</lastBuildDate><atom:link href="https://nanoninja.github.io/golangbook/functions/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Defer</title>
+      <link>https://nanoninja.github.io/golangbook/functions/defer/</link>
+      <pubDate>Tue, 22 Feb 2022 09:16:57 +0100</pubDate>
+      
+      <guid>https://nanoninja.github.io/golangbook/functions/defer/</guid>
+      <description>L&amp;rsquo;instruction defer permet d&amp;rsquo;exécuter un code même en cas erreur. Il est possible lorsque qu&amp;rsquo;on obtient une erreur durant l&amp;rsquo;exécution du code que l&amp;rsquo;on souhaite effectuer des traitements avant de renvoyer cette dernière. C&amp;rsquo;est le cas quand on manipule un fichier et qu&amp;rsquo;une erreur survient de pouvoir libérer la ressource en fermant proprement le fichier.
+package main  import &amp;#34;fmt&amp;#34;  func main() {  defer func() {  fmt.Println(&amp;#34;After main&amp;#34;)  }()   fmt.</description>
+    </item>
+    
+  </channel>
+</rss>

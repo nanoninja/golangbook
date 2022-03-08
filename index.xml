@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Accueil on Formation Go</title>
+    <link>https://nanoninja.github.io/golangbook/</link>
+    <description>Recent content in Accueil on Formation Go</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 20 Feb 2022 20:28:21 +0100</lastBuildDate><atom:link href="https://nanoninja.github.io/golangbook/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hello World</title>
+      <link>https://nanoninja.github.io/golangbook/basics/hello-world/</link>
+      <pubDate>Fri, 25 Feb 2022 10:34:17 +0100</pubDate>
+      
+      <guid>https://nanoninja.github.io/golangbook/basics/hello-world/</guid>
+      <description>Créer un fichier main.go dans le répertoire de votre choix et ajouter le code suivant :
+package main  import &amp;#34;fmt&amp;#34;  func main() {  fmt.Println(&amp;#34;Hello Gophers !&amp;#34;) } On exécute le programme
+go run main.go Description du programme Chaque programme doit commencer par la déclaration de package.
+Les packages sont utilisés pour organiser et réutiliser le code. Dans Go, un programme est destiné à devenir un exécutable ou une bibliothèque partagée et réutilisable dans d&amp;rsquo;autres programmes.</description>
+    </item>
+    
+    <item>
+      <title>Commandes</title>
+      <link>https://nanoninja.github.io/golangbook/installation/commands/</link>
+      <pubDate>Thu, 24 Feb 2022 16:10:46 +0100</pubDate>
+      
+      <guid>https://nanoninja.github.io/golangbook/installation/commands/</guid>
+      <description>Obtenir la version de Go go version Version de Go utilisé par un binaire :
+go version -m [file ...] Afficher l&amp;rsquo;aide go help go help build Accéder à la documentation en ligne de commande La documentation est alimentée par les commentaires rédigés par les développeurs dans le code source et est accessible en locale dans le terminal en ligne de commande :
+go doc Exemples :
+   Commande Description     go doc Affiche la documentation du package actuel   go doc Foo Affiche la documentation de Foo dans le package actuel   go doc encoding/json Affiche la documentation du package encoding/json   go doc json Raccourci pour encoding/json   go doc json.</description>
+    </item>
+    
+    <item>
+      <title>Historique</title>
+      <link>https://nanoninja.github.io/golangbook/introduction/historical/</link>
+      <pubDate>Tue, 22 Feb 2022 09:34:54 +0100</pubDate>
+      
+      <guid>https://nanoninja.github.io/golangbook/introduction/historical/</guid>
+      <description>Go est né dans les laboratoires de Google, Il a initialement été créé par Rob Pike, Ken Thomson, et Robert Griesemer.
+Rob Pike, un ancien ingénieur de chez Bell est principalement le co-créateur avec Kenneth Thomson du système UTF-8, du système Plan 9 pour Bell.
+Kenneth Thomson est principalement le co-concepteur du système Unix, créateur du langage B l’ancêtre du langage C.
+Robert Griesemer a entre autres travaillé sur le moteur JS V8 de Google Chrome et la machine virtuelle Java HotSpot.</description>
+    </item>
+    
+    <item>
+      <title>Arrays</title>
+      <link>https://nanoninja.github.io/golangbook/collections/arrays/</link>
+      <pubDate>Tue, 22 Feb 2022 09:03:40 +0100</pubDate>
+      
+      <guid>https://nanoninja.github.io/golangbook/collections/arrays/</guid>
+      <description>Un tableau est une collection de taille fixe composé d&amp;rsquo;éléments de même type et peut avoir plusieurs dimensions. Les éléments sont indicés de 0 à n, L&amp;rsquo;opérateur [ ] permet lors de la création de définir la taille fixe du tableau et à l&amp;rsquo;utilisation d&amp;rsquo;accéder directement à un élément dont l&amp;rsquo;indice est donnée.
+var a [taille]Type Créer un tableau avec le mot-clé var package main  import &amp;#34;fmt&amp;#34;  func main() {  var a [3]string   fmt.</description>
+    </item>
+    
+    <item>
+      <title>Packages</title>
+      <link>https://nanoninja.github.io/golangbook/basics/packages/</link>
+      <pubDate>Fri, 25 Feb 2022 12:52:24 +0100</pubDate>
+      
+      <guid>https://nanoninja.github.io/golangbook/basics/packages/</guid>
+      <description>Les packages sont utilisés comme des programmes exécutables ou des bibliothèques réutilisables. On reconnait un programme exécutable car il est défini par un package et une fonction nommés main.
+package main  func main() {  } Les autres packages sont de type bibliothèque pouvant être réutilisés dans plusieurs programmes et permettent d&amp;rsquo;organiser et de structurer le code de façon modulaire. Pour faciliter les imports de nos packages il est recommandé de placer nos fichiers dans notre espace de travail pour les rendre accessibles partout.</description>
+    </item>
+    
+    <item>
+      <title>Principes et Philosophie</title>
+      <link>https://nanoninja.github.io/golangbook/introduction/phylosophy/</link>
+      <pubDate>Tue, 22 Feb 2022 14:55:42 +0100</pubDate>
+      
+      <guid>https://nanoninja.github.io/golangbook/introduction/phylosophy/</guid>
+      <description>La philosophie de Go est l’alliance de la modernité avec la force des langages ayant déjà fait leurs preuves.
+Go a été conçu pour relever plusieurs défis comme la rapidité d’exécution des programmes, l’adaptabilité aux architectures des machines de nouvelles générations et une meilleure prise en charge des environnements réseaux.
+Il reprend les bases des langages comme le C/C++, Java, le Pascal, Modula, afin d’hériter de certains de leurs principes. L’accent est mis sur la productivité et le langage est volontairement simplifié dans son écriture pour permettre de faire beaucoup avec peu de lignes de code selon le principe « Write Less, Do More » ou « KISS »</description>
+    </item>
+    
+    <item>
+      <title>Domaines d&#39;application</title>
+      <link>https://nanoninja.github.io/golangbook/introduction/domains/</link>
+      <pubDate>Tue, 22 Feb 2022 09:35:51 +0100</pubDate>
+      
+      <guid>https://nanoninja.github.io/golangbook/introduction/domains/</guid>
+      <description>Les domaines d’applications du langage Go sont très vastes et ne semblent pas connaitre de limites. Sa polyvalence peut permettre à une équipe de réduire le nombre de langages utilisés au sein d’un plateau, en supprimant ceux pour lesquels Go peut occuper la même fonction.
+On retrouve le langage dans les domaines suivants :
+ Serveurs Web Systèmes embarqués IOT Applications Mobiles Jeux-vidéos  Ils utilisent Go Aujourd’hui, bon nombre d’entreprises à l’échelle internationale ont adopté Go soit comme langage complémentaire ou principal.</description>
+    </item>
+    
+    <item>
+      <title>Slices</title>
+      <link>https://nanoninja.github.io/golangbook/collections/slices/</link>
+      <pubDate>Tue, 22 Feb 2022 09:03:49 +0100</pubDate>
+      
+      <guid>https://nanoninja.github.io/golangbook/collections/slices/</guid>
+      <description>Un slice est une collection de taille fixe pouvant évoluer soit en effectuant un découpage (slicing) diminuant la taille, soit en utilisant la fonction append() pour ajouter des éléments. Comme le tableau, le slice est composé d&amp;rsquo;éléments de même type et peut posséder plusieurs dimensions.
+var s []type Déclarer un slice var s []int  s := []int{} Initialiser un slice avec la fonction make La fonction make permet d&amp;rsquo;initialiser un slice pour un type d&amp;rsquo;élément donné, en spécifiant une taille et éventuellement sa capacité.</description>
+    </item>
+    
+    <item>
+      <title>Maps</title>
+      <link>https://nanoninja.github.io/golangbook/collections/maps/</link>
+      <pubDate>Tue, 22 Feb 2022 09:03:59 +0100</pubDate>
+      
+      <guid>https://nanoninja.github.io/golangbook/collections/maps/</guid>
+      <description>Une carte (map) est une collection de paires clé-valeur non ordonnées. Les cartes sont souvent appelées dictionnaires, tableaux associatifs, hashages dans d’autres langages de programmation. Elles sont utilisées pour stocker des données associées et y accéder en fonction des clés uniques. La valeur d’une carte non initialisée est nil.
+var m map[keyType]ElementType var m1 map[string]string var m2 map[string]interface{}  m3 := map[string]string{} m4 := map[string]int{&amp;#34;a&amp;#34;: 1, &amp;#34;b&amp;#34;: 2} Lire et modifier une map package main  import &amp;#34;fmt&amp;#34;  func main() {  m := map[string]string{  &amp;#34;name&amp;#34;: &amp;#34;Gauffre&amp;#34;,  &amp;#34;city&amp;#34;: &amp;#34;Denver&amp;#34;,  }   m[&amp;#34;name&amp;#34;] = &amp;#34;Gopher&amp;#34;  m[&amp;#34;langage&amp;#34;] = &amp;#34;Go&amp;#34;   fmt.</description>
+    </item>
+    
+    <item>
+      <title>Types de base</title>
+      <link>https://nanoninja.github.io/golangbook/basics/types/</link>
+      <pubDate>Sun, 20 Feb 2022 20:28:21 +0100</pubDate>
+      
+      <guid>https://nanoninja.github.io/golangbook/basics/types/</guid>
+      <description>Go est un langage de programmation à typage statique. Cela signifie que les variables ont toujours un type spécifique défini par le programmeur et que ce type ne peut pas changer. Le compilateur peut ainsi détecter les erreurs de type avant l&amp;rsquo;exécution pour obtenir la sûreté du typage. Le langage propose aussi un puissant mécanisme d&amp;rsquo;inférence de type. Go est livré avec plusieurs types de données par défaut que nous allons examiner plus en détail.</description>
+    </item>
+    
+    <item>
+      <title>Variables</title>
+      <link>https://nanoninja.github.io/golangbook/basics/variables/</link>
+      <pubDate>Sun, 20 Feb 2022 20:28:21 +0100</pubDate>
+      
+      <guid>https://nanoninja.github.io/golangbook/basics/variables/</guid>
+      <description>La déclaration des variables dans Go se fait par l&amp;rsquo;utilisation du mot-clé var ou l&amp;rsquo;opérateur de déclaration de variable court :=.
+Le mot-clé var peut être utilisé pour déclarer des variables dans un package ou dans une fonction. Il est associé à un nom, un type et une valeur optionnel. Si une variable n&amp;rsquo;a pas encore reçu de valeur, sa valeur est la valeur zéro de son type.
+var NOM TYPE = [EXPRESSION] L&amp;rsquo;opérateur de déclaration de variable court := est utilisé pour déclarer et initialiser des variables localement dans des fonctions réduisant ainsi la portée des variables.</description>
+    </item>
+    
+    <item>
+      <title>Constantes</title>
+      <link>https://nanoninja.github.io/golangbook/basics/constantes/</link>
+      <pubDate>Sun, 20 Feb 2022 20:28:21 +0100</pubDate>
+      
+      <guid>https://nanoninja.github.io/golangbook/basics/constantes/</guid>
+      <description>Une constante est l&amp;rsquo;opposée d&amp;rsquo;une variable, c&amp;rsquo;est une valeur qui ne doit pas être modifiée par le programme lors de son exécution.
+Le type d&amp;rsquo;une constante dans Go est représenté par :
+ une rune un entier un nombre à virgule flottante un imaginaire un littéral de chaîne.  const a = 4 const b = 2 &amp;lt;&amp;lt; 7 const c = 10 + 6 Déclarer des constantes en liste const (  a = 1  b = 2  c = 4  d = 8 ) Déclarer des constantes avec un iota Le mot-clé iota permet de créer une séquence en partant d&amp;rsquo;une valeur incrémentale qui est réinitialisé à zéro pour chaque nouvelle séquence.</description>
+    </item>
+    
+    <item>
+      <title>Identifiant blanc _</title>
+      <link>https://nanoninja.github.io/golangbook/basics/blank/</link>
+      <pubDate>Tue, 22 Feb 2022 09:19:25 +0100</pubDate>
+      
+      <guid>https://nanoninja.github.io/golangbook/basics/blank/</guid>
+      <description>Dans Go, Il est possible qu&amp;rsquo;une fonction retourne plusieurs valeurs et qu&amp;rsquo;une de ces valeurs ne soit pas utile pour notre programme. Par exemple la fonction Println du package fmt retourne deux valeurs. La première est le nombre d&amp;rsquo;octets écrits sur la sortie standard et la deuxième toute erreur d&amp;rsquo;écriture rencontrée.
+Nous voulons afficher le nombre d&amp;rsquo;octets écris mais nous ne souhaitons pas utiliser la variable d&amp;rsquo;erreur seulement Go stop la compilation pour les variables définies dans une fonction qui sont inutilisées.</description>
+    </item>
+    
+    <item>
+      <title>Portée des variables</title>
+      <link>https://nanoninja.github.io/golangbook/basics/scope/</link>
+      <pubDate>Tue, 22 Feb 2022 09:18:48 +0100</pubDate>
+      
+      <guid>https://nanoninja.github.io/golangbook/basics/scope/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Package fmt</title>
+      <link>https://nanoninja.github.io/golangbook/basics/fmt/</link>
+      <pubDate>Mon, 28 Feb 2022 16:40:19 +0100</pubDate>
+      
+      <guid>https://nanoninja.github.io/golangbook/basics/fmt/</guid>
+      <description>Le package fmt implémente des entrées/sorties formatées avec des fonctions analogues aux printf et scanf du language C.
+go doc fmt.Print  package fmt // import &amp;#34;fmt&amp;#34;  func Print(a ...interface{}) (n int, err error)  Print formats using the default formats for its operands and writes to  standard output. Spaces are added between operands when neither is a string.  It returns the number of bytes written and any write error encountered.</description>
+    </item>
+    
+    <item>
+      <title>Contrôle de flux</title>
+      <link>https://nanoninja.github.io/golangbook/basics/control-flow/</link>
+      <pubDate>Tue, 01 Mar 2022 13:47:44 +0100</pubDate>
+      
+      <guid>https://nanoninja.github.io/golangbook/basics/control-flow/</guid>
+      <description>Le contrôle de flux se matérialise par l&amp;rsquo;insertion dans le code d&amp;rsquo;une structure conditionnelle, (aussi appelé expression conditionnelle). C&amp;rsquo;est un fonction du langage, qui effectue différents calculs ou actions, en fonction de l&amp;rsquo;évaluation d&amp;rsquo;une condition booléenne, à savoir vraie ou fausse.
+Les structures conditionnelles dans Go sont similaires à de nombreux langages. Elles sont composées d&amp;rsquo;un mot-clé réservé, d&amp;rsquo;un initialisateur optionnel, d&amp;rsquo;une expression sans parenthèses et d&amp;rsquo;un bloc d&amp;rsquo;instructions entre accolades.</description>
+    </item>
+    
+    <item>
+      <title>Espace de Travail</title>
+      <link>https://nanoninja.github.io/golangbook/installation/workspace/</link>
+      <pubDate>Tue, 22 Feb 2022 16:41:06 +0100</pubDate>
+      
+      <guid>https://nanoninja.github.io/golangbook/installation/workspace/</guid>
+      <description>Un espace de travail (Workspace) est une hiérarchie de répertoires dédiée à la création d’applications et de paquetages.
+Il est créé par défaut dans votre dossier personnel et se nomme go.
+Cet espace doit avoir 3 dossiers de niveau supérieur appelés :
+go ├── bin ├── pkg └── src   bin contient les binaires exécutables provenant de dépendances tierces ou de la compilation de vos programmes via la commande go install</description>
+    </item>
+    
+    <item>
+      <title>Ressources</title>
+      <link>https://nanoninja.github.io/golangbook/introduction/resources/</link>
+      <pubDate>Tue, 22 Feb 2022 09:39:13 +0100</pubDate>
+      
+      <guid>https://nanoninja.github.io/golangbook/introduction/resources/</guid>
+      <description>   Lien Description     Go.dev Site officiel   Go Tour Go Tour   Go Specs Spécification du langage   Playground Playground   Builtin Builtin   Github Go sur Github   Livres Ouvrages sur Go   Go Users Entreprises Utilisant Go dans le monde    Package populaires    Lien Description     Echo Framework Web   Gin Framework Web   Go Buffalo Framework Web   Hugo Générateur de site statique   Caddy Serveur Web   GoBot Framework IoT   GoCV Framework OpenCV   GoUsers Entreprises Utilisant Go dans le monde    </description>
+    </item>
+    
+    <item>
+      <title>Panic et Recover</title>
+      <link>https://nanoninja.github.io/golangbook/errors/recover/</link>
+      <pubDate>Tue, 22 Feb 2022 09:26:32 +0100</pubDate>
+      
+      <guid>https://nanoninja.github.io/golangbook/errors/recover/</guid>
+      <description>Dans la grande majorité du temps la gestion des conditions anormales dans un programme Go se fait en utilisant les erreurs. Elles sont suffisantes pour couvrir l’ensemble d’un programme.
+Pourtant il existe certaines situations où un programme après une condition anormale se met à paniquer et se voit contraint d’arrêter prématurément son exécution. Quand une fonction rencontre une panique son exécution est stoppée puis toutes les fonctions différées sont exécutées avant de rendre le contrôle à son appelant.</description>
+    </item>
+    
+    <item>
+      <title>Defer</title>
+      <link>https://nanoninja.github.io/golangbook/functions/defer/</link>
+      <pubDate>Tue, 22 Feb 2022 09:16:57 +0100</pubDate>
+      
+      <guid>https://nanoninja.github.io/golangbook/functions/defer/</guid>
+      <description>L&amp;rsquo;instruction defer permet d&amp;rsquo;exécuter un code même en cas erreur. Il est possible lorsque qu&amp;rsquo;on obtient une erreur durant l&amp;rsquo;exécution du code que l&amp;rsquo;on souhaite effectuer des traitements avant de renvoyer cette dernière. C&amp;rsquo;est le cas quand on manipule un fichier et qu&amp;rsquo;une erreur survient de pouvoir libérer la ressource en fermant proprement le fichier.
+package main  import &amp;#34;fmt&amp;#34;  func main() {  defer func() {  fmt.Println(&amp;#34;After main&amp;#34;)  }()   fmt.</description>
+    </item>
+    
+  </channel>
+</rss>

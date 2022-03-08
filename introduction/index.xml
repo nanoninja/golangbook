@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Introduction on Formation Go</title>
+    <link>https://nanoninja.github.io/golangbook/introduction/</link>
+    <description>Recent content in Introduction on Formation Go</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 22 Feb 2022 08:34:18 +0100</lastBuildDate><atom:link href="https://nanoninja.github.io/golangbook/introduction/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Historique</title>
+      <link>https://nanoninja.github.io/golangbook/introduction/historical/</link>
+      <pubDate>Tue, 22 Feb 2022 09:34:54 +0100</pubDate>
+      
+      <guid>https://nanoninja.github.io/golangbook/introduction/historical/</guid>
+      <description>Go est né dans les laboratoires de Google, Il a initialement été créé par Rob Pike, Ken Thomson, et Robert Griesemer.
+Rob Pike, un ancien ingénieur de chez Bell est principalement le co-créateur avec Kenneth Thomson du système UTF-8, du système Plan 9 pour Bell.
+Kenneth Thomson est principalement le co-concepteur du système Unix, créateur du langage B l’ancêtre du langage C.
+Robert Griesemer a entre autres travaillé sur le moteur JS V8 de Google Chrome et la machine virtuelle Java HotSpot.</description>
+    </item>
+    
+    <item>
+      <title>Principes et Philosophie</title>
+      <link>https://nanoninja.github.io/golangbook/introduction/phylosophy/</link>
+      <pubDate>Tue, 22 Feb 2022 14:55:42 +0100</pubDate>
+      
+      <guid>https://nanoninja.github.io/golangbook/introduction/phylosophy/</guid>
+      <description>La philosophie de Go est l’alliance de la modernité avec la force des langages ayant déjà fait leurs preuves.
+Go a été conçu pour relever plusieurs défis comme la rapidité d’exécution des programmes, l’adaptabilité aux architectures des machines de nouvelles générations et une meilleure prise en charge des environnements réseaux.
+Il reprend les bases des langages comme le C/C++, Java, le Pascal, Modula, afin d’hériter de certains de leurs principes. L’accent est mis sur la productivité et le langage est volontairement simplifié dans son écriture pour permettre de faire beaucoup avec peu de lignes de code selon le principe « Write Less, Do More » ou « KISS »</description>
+    </item>
+    
+    <item>
+      <title>Domaines d&#39;application</title>
+      <link>https://nanoninja.github.io/golangbook/introduction/domains/</link>
+      <pubDate>Tue, 22 Feb 2022 09:35:51 +0100</pubDate>
+      
+      <guid>https://nanoninja.github.io/golangbook/introduction/domains/</guid>
+      <description>Les domaines d’applications du langage Go sont très vastes et ne semblent pas connaitre de limites. Sa polyvalence peut permettre à une équipe de réduire le nombre de langages utilisés au sein d’un plateau, en supprimant ceux pour lesquels Go peut occuper la même fonction.
+On retrouve le langage dans les domaines suivants :
+ Serveurs Web Systèmes embarqués IOT Applications Mobiles Jeux-vidéos  Ils utilisent Go Aujourd’hui, bon nombre d’entreprises à l’échelle internationale ont adopté Go soit comme langage complémentaire ou principal.</description>
+    </item>
+    
+    <item>
+      <title>Ressources</title>
+      <link>https://nanoninja.github.io/golangbook/introduction/resources/</link>
+      <pubDate>Tue, 22 Feb 2022 09:39:13 +0100</pubDate>
+      
+      <guid>https://nanoninja.github.io/golangbook/introduction/resources/</guid>
+      <description>   Lien Description     Go.dev Site officiel   Go Tour Go Tour   Go Specs Spécification du langage   Playground Playground   Builtin Builtin   Github Go sur Github   Livres Ouvrages sur Go   Go Users Entreprises Utilisant Go dans le monde    Package populaires    Lien Description     Echo Framework Web   Gin Framework Web   Go Buffalo Framework Web   Hugo Générateur de site statique   Caddy Serveur Web   GoBot Framework IoT   GoCV Framework OpenCV   GoUsers Entreprises Utilisant Go dans le monde    </description>
+    </item>
+    
+  </channel>
+</rss>

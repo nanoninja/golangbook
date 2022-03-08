@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Gestion des erreurs on Formation Go</title>
+    <link>https://nanoninja.github.io/golangbook/errors/</link>
+    <description>Recent content in Gestion des erreurs on Formation Go</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 22 Feb 2022 09:01:42 +0100</lastBuildDate><atom:link href="https://nanoninja.github.io/golangbook/errors/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Panic et Recover</title>
+      <link>https://nanoninja.github.io/golangbook/errors/recover/</link>
+      <pubDate>Tue, 22 Feb 2022 09:26:32 +0100</pubDate>
+      
+      <guid>https://nanoninja.github.io/golangbook/errors/recover/</guid>
+      <description>Dans la grande majorité du temps la gestion des conditions anormales dans un programme Go se fait en utilisant les erreurs. Elles sont suffisantes pour couvrir l’ensemble d’un programme.
+Pourtant il existe certaines situations où un programme après une condition anormale se met à paniquer et se voit contraint d’arrêter prématurément son exécution. Quand une fonction rencontre une panique son exécution est stoppée puis toutes les fonctions différées sont exécutées avant de rendre le contrôle à son appelant.</description>
+    </item>
+    
+  </channel>
+</rss>
